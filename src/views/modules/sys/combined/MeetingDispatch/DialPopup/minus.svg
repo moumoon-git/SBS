@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="27px" viewBox="0 0 45 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D8D8D8" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.3090119,2 L28.8871037,2 C32.2008122,2 34.8871037,4.6862915 34.8871037,8 L34.8871037,17 C34.8871037,20.3137085 32.2008122,23 28.8871037,23 L13.3090119,23 C11.7553072,23 10.2621816,22.3972978 9.14384459,21.3187245 L-6.03961325e-14,12.5 L-6.03961325e-14,12.5 L9.14384459,3.68127546 C10.2621816,2.60270219 11.7553072,2 13.3090119,2 Z" id="path-2"></path>
+        <filter x="-15.8%" y="-16.7%" width="131.5%" height="152.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.882670969   0 0 0 0 0.882670969   0 0 0 0 0.882670969  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="值班值守-通讯调度" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会议调度-通讯录" transform="translate(-1278.000000, -614.000000)">
+            <g id="2" transform="translate(1106.000000, 373.000000)">
+                <g id="编组-11" transform="translate(10.000000, 61.000000)">
+                    <g id="编组-12" transform="translate(165.000000, 180.000000)">
+                        <g id="矩形">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <text id="×" font-family="SFCompactText-Semibold, SF Compact Text" font-size="19" font-weight="500" fill="#333333">
+                            <tspan x="15" y="18">×</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

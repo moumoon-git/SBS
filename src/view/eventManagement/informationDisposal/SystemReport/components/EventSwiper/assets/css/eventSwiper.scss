@@ -1,0 +1,123 @@
+.swiper_event-list {
+  padding: 0 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.event_list {
+  margin-right: 15px;
+}
+
+.event_list .item_wrap,
+.event_list .swiper-slide {
+  width: 122px !important;
+  height: 42px;
+  background: #f6f9ff;
+  border-radius: 5px;
+  border: 1px solid #d1ddf1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.event_list .item_wrap_active {
+  border: 1px solid #0091ff !important;
+}
+
+.event_list .item_wrap .el-icon-close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 100;
+}
+.event_list .item_wrap_bg {
+  width: 32px;
+  height: 37px;
+  position: absolute;
+  right: 0;
+  background: url('/@/../static/img/Communihistory/event_bg2.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.event_list .item_wrap_bg > img {
+  object-fit: cover;
+  width: 56px;
+  height: 49px;
+}
+.event_list .item_wrap > p {
+  margin: 0;
+  padding: 0;
+}
+.event_name {
+  font-size: 17px;
+  color: #333333;
+  font-weight: bold;
+}
+.event_date {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 6px !important;
+}
+
+/* 轮播图样式 start */
+.swiper_event-list .swiper-button-prev {
+  left: 0 !important;
+  top: 40px;
+  --swiper-navigation-color: #ffffff; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 30px; /* 设置按钮大小 */
+  background: url('./assets/images/left.png') no-repeat;
+  background-position: 50% 50% !important;
+}
+
+.swiper_event-list .swiper-container {
+  padding: 18px 24px 11px 24px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 三角形-左边 */
+/* .swiper_event-list .swiper-button-prev {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 9px solid #999999;
+  border-left: 9px solid transparent;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+} */
+
+.swiper_event-list .swiper-button-next {
+  right: 0 !important;
+  top: 40px;
+  --swiper-navigation-color: #ffffff; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 30px; /* 设置按钮大小 */
+  background: url('./assets/images/right.png') no-repeat;
+  background-position: 50% 50% !important;
+}
+
+/* 三角形-右边 */
+.swiper_event-list .swiper-button-next .next {
+  position: absolute;
+  /* right: -6px; */
+  /* right: 0px; */
+  width: 0;
+  height: 0;
+  border-left: 9px solid #999999;
+  border-right: 9px solid transparent;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+.swiper_event-list .my-button-disabled {
+  /* opacity: 0.2; */
+}
+.swiper_event-list .swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper_event-list .swiper-slide {
+  margin-right: 11px;
+}

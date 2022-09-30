@@ -1,0 +1,144 @@
+.sv-template__container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 112px);
+    background: transparent;
+}
+
+.left__container,
+.middle__container {
+    display: inline-block;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 14px 2px rgba(54, 121, 225, 0.09);
+}
+// 左边栏内容
+.left__container {
+    width: 300px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    transition: width 0.3s ease;
+    // 头部
+    .left__header {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        .add_group {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+            background: no-repeat url('../img/icon/cross.svg') center/50% 50%;
+            cursor: pointer;
+            &:hover {
+                background-image: url('../img/icon/cross_hover.svg');
+            }
+            &:active {
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+    // 树形
+    .left__tree {
+        flex: 1;
+    }
+    // 折叠按钮
+    .left__collapse__button {
+        width: 20px;
+        height: 70px;
+        background: #ffffff;
+        border-top-right-radius: 30px  50px;
+        border-bottom-right-radius: 30px 50px;
+        box-shadow: 1px 0px 5px rgba(54, 121, 225, 0.15);
+        position: absolute;
+        right: -20px;
+        top: calc(50% - 35px);
+        cursor: pointer;
+        transition: right 0.3s ease;
+        z-index: 1;
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: no-repeat url('../img/tree/left_collapse_hover.svg') center/60% 20%;
+        }
+        &:hover::after{
+            background-image: url('../img/tree/left_collapse.svg');
+        }
+    }
+    &.left__collapse {
+        width: 0;
+        margin-right: 0;
+        // 除了折叠按钮，隐藏其余所有元素
+        &>*:not(.left__collapse__button) {
+            display: none;
+        }
+        .left__collapse__button {
+            right: -20px;
+            z-index: 2;
+            border-radius: 0;
+            border-top-left-radius: 30px  50px;
+            border-bottom-left-radius: 30px 50px;
+            transform: rotate(180deg);
+            box-shadow: -1px 0px 5px rgba(54, 121, 225, 0.15);
+        }
+    }
+}
+.middle__all {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+// 上方栏内容
+.upper__container {
+}
+// 中间栏内容
+.middle__container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .middle__header {
+        padding: 10px;
+        font-size: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: -10px;
+        & > * {
+            margin: 0 0 10px 5px;
+            flex-shrink: 0;
+        }
+        .middle__header__title {
+            flex-grow: 1;
+            flex-shrink: 0;
+            border-left: 3px solid #0091FF;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bold;
+            padding: 0 0 0 14px;
+        }
+    }
+    .middle__statistics {
+        // to do
+    }
+    .middle__table {
+        flex: 1;
+        position: relative;
+    }
+    .middle__footer {
+        height: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 10px 0 0;
+    }
+}
+
+input::-ms-clear, input::-ms-reveal{display:none!important}

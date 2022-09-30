@@ -1,0 +1,123 @@
+.upload_content {
+  display: flex;
+  justify-content: flex-start;
+}
+.upload-content__label {
+  margin-right: 12px;
+  margin-left: 20px;
+}
+.upload_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.upload_button {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 17px;
+  width: 156px;
+  height: 42px;
+  border-radius: 3px;
+}
+
+.upload_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.upload_wrap >>> .el-upload-list__item {
+  display: flex !important;
+}
+
+.image_list {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  margin: 10px 0 15px 0;
+}
+
+.image_list .img_wrap {
+  position: relative;
+}
+
+.img_item {
+  width: 88px;
+  height: 88px;
+  margin-right: 15px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.img_item >>> .el-image__preview {
+  object-fit: cover;
+}
+
+.img_delete {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: -6px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.file_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.file_list:hover {
+  background: #f6f7fa;
+  border-radius: 2px;
+}
+.file_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.file_name:hover {
+  font-weight: 400;
+  color: #0091ff;
+  cursor: pointer;
+}
+.upload_success_icon {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+.file_name {
+  font-size: 14px;
+  min-width: 206px;
+  text-overflow: ellipsis;
+  text-align: left;
+  padding-left: 4px;
+  margin-right: 20px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.upload_content >>> .el-upload-list {
+  display: none !important;
+}
+.file_item .el-icon-close {
+  display: none;
+}
+.file_item:hover .el-icon-close {
+  display: block;
+}
+.file_item:hover .upload_success_icon {
+  display: none;
+}

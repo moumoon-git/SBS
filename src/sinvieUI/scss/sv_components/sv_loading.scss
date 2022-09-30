@@ -1,0 +1,16 @@
+@keyframes sv-animation-rotate {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
+.sv-loading {
+    &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: no-repeat center/100% 100% url('../img/sv_loading.svg');
+        margin: 0 auto;
+        animation: linear infinite sv-animation-rotate 2s;
+    }
+}

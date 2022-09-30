@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="25px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask fill="white" id="clip16">
+      <path d="M 461 290  C 455.45 290  451 285.55  451 280  L 451 275  C 451 269.45  455.45 265  461 265  L 463 265  C 468.55 265  473 269.45  473 275  L 473 280  C 473 285.55  468.55 290  463 290  " fill-rule="evenodd" />
+    </mask>
+  </defs>
+  <g transform="matrix(1 0 0 1 -451 -265 )">
+    <image preserveAspectRatio="none" style="overflow:visible" width="22" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABP0lEQVRYR+2WMQrCMBSGzTHcBTfBG+gh2k2P4AUcdPAmbnZSBEcFd3dxERw8Rv1TklJKmrykLxSkhQeFvv7/995rkopBx5fo2H/QA/xnB/I8T/BtLRBvIcTK9p2xd0CZHyqmGSDSJogYANJcdqB6LQGxN0GwAajKE1kt7usQcQFqbS9aXoGIOwLDzGWnSwjb/GViqxE0mOtRWyvXScEAHObBHeAyDwLgNPcG4Db3AohhTgaIZU4CgPkEiWO1bKp7fLne2/zUOJchADYw2CL0gaIhSOvcBUcBeEBkqoQ0RLHnu8Qpz60AqH4EkVdNKIV5RhGn5LgAdhBZI56II+IM8ztFmJrjArhA6KSMP1RRn7xGALR/iGq/PmIhuTaAKwRnIaKGd24oZm7ScgEw+ePc9wVgc3YIOfeB2CA9QOcd+AHENX0hZ2EI+QAAAABJRU5ErkJggg==" x="451px" y="265px" mask="url(#clip16)" />
+  </g>
+</svg>

@@ -1,0 +1,436 @@
+.informationDisposalNew_warp {
+  /* width: 100%; */
+  height: 98%;
+}
+.informationDisposalNew_warp .word {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  color: #fff;
+  transform-origin: bottom center;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  right: -14px;
+  top: 3px;
+  font-size: 10px;
+  color: white;
+}
+.informationDisposalNew_warp .triangle-topright {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  transform: rotate(45deg);
+  width: 25px;
+}
+
+.informationDisposalNew_warp .textType {
+  display: inline-block;
+  background: rgba(250, 250, 250, 1);
+  border-radius: 3px;
+  border: 1px solid rgba(197, 222, 254, 1);
+  width: 75px;
+  height: 21px;
+  color: #0091ff !important;
+  line-height: 21px;
+  text-align: center;
+}
+>>> .el-dialog__headerbtn .el-dialog__close {
+  font-size: 25px;
+  font-weight: bold;
+}
+>>> .el-dialog--center .el-dialog__body {
+  padding: 5px 0 0 0;
+}
+#faxCard >>> .el-card__body {
+  padding: 0px;
+}
+.clock_img {
+  float: right;
+  color: #0091ff;
+}
+.message-img {
+  background-image: url('../../../../static/img/icon/message.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 27px;
+  width: 24px;
+  margin-right: 4px;
+}
+.event-img {
+  background-image: url('../../../../static/img/icon/event.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 27px;
+  width: 24px;
+  margin-right: 4px;
+}
+.communicate-img {
+  background-image: url('../../../../static/img/icon/communicate.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 27px;
+  width: 24px;
+  margin-right: 4px;
+}
+.cardModelDiv {
+  border-bottom: 5px solid cornflowerblue;
+}
+
+.cardModelDiv >>> .el-card__header {
+  padding: 14px 20px;
+}
+.messageDiv {
+  flex: 1;
+  height: 42px;
+  border: #dddee1 solid 1px;
+  font-size: 16px;
+  color: #999999;
+  line-height: 42px;
+  background: #ffffff;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.messageDiv:hover {
+  color: #333333;
+  background: #fbfcff;
+}
+.messageDiv:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.messsagColor {
+  background-color: #f0f6ff;
+  color: #0091ff;
+  border-left: 3px solid #0091ff;
+  box-sizing: border-box;
+}
+.messageDiv-active {
+  border-bottom: 1px solid transparent;
+  color: #333333;
+}
+.messageCut {
+  margin: 0 auto;
+  font-size: 16px;
+}
+#itemCalss >>> .el-form-item__content {
+  margin-left: 0 !important;
+}
+.fullScreen {
+  position: absolute;
+  right: 30px;
+  z-index: 999;
+  cursor: pointer;
+  color: #ccc;
+}
+.tabsClass {
+  background: #ffffff;
+  /* width: 100%;
+  display: flex;
+  flex-direction: column; */
+}
+
+>>> .el-tabs__header.is-top {
+  margin: 0;
+  height: 52px;
+}
+
+>>> .el-tabs__nav-wrap.is-top {
+  color: #a2a2a2 !important;
+  background: #f9fbff;
+  height: 52px;
+}
+
+>>> .el-tabs__nav-scroll {
+  margin: 10px 32px;
+}
+
+>>> .el-tabs__item {
+  font-size: 17px;
+  color: #a2a2a2;
+}
+
+>>> .el-tabs__item.is-active {
+  color: #409eff;
+}
+
+>>> .el-tabs__item:hover {
+  color: #6b7280;
+}
+>>> .el-tabs__nav-next,
+>>> .el-tabs__nav-prev {
+  line-height: 58px;
+  font-size: 20px;
+}
+
+>>> .el-range-editor--small.el-input__inner {
+  height: initial;
+}
+
+>>> .el-range-editor--small .el-range-separator {
+  line-height: 32px;
+}
+
+.icon-smile {
+  background-image: url(../../../assets/icpImg/smile.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  float: right;
+}
+#itemCalss >>> .el-form-item__content {
+  margin-left: 0 !important;
+}
+#serial >>> .el-input.is-disabled .el-input__inner:nth-child(1) {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+>>> .el-input.is-disabled .el-input__inner {
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  white-space: nowrap;
+}
+>>> .el-input-number--mini {
+  width: 193px;
+}
+/* >>>.el-form--label-left .el-form-item__label{
+     letter-spacing: 1px;
+     position: relative;
+   } */
+#reporter >>> .el-col-10 {
+  padding: 0 !important;
+}
+#reporter >>> .el-col-14 {
+  padding-right: 0 !important;
+}
+#itemCalss >>> .el-form-item__content {
+  margin-left: 0 !important;
+}
+#baowen >>> .el-form-item__content {
+  margin-left: 0 !important;
+}
+#baowenNeiRon >>> .el-form-item__content textarea {
+  background-color: #f9f9f9;
+  padding-right: 80px;
+  resize: none;
+}
+#baowen >>> .el-form-item__label:before {
+  content: '';
+  color: #f56c6c;
+  margin-right: 4px;
+}
+.el-pagination__jump {
+  margin-left: 0;
+}
+>>> .phoneCall .el-form-item__content {
+  margin-left: 0 !important;
+}
+#titleEvent >>> .el-input__inner {
+  padding-right: 84px !important;
+}
+.none {
+  height: 40px;
+  /*margin: 10px 0;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.parameterTop,
+.parameterBottom {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+}
+.parameterTop li,
+.parameterBottom li {
+  list-style: none;
+  width: 33.333%;
+  height: 30px;
+}
+.parameterTop li::before {
+  content: '●';
+  color: #bde4ff;
+  padding-right: 10px;
+}
+>>> .el-tooltip__popper {
+  max-width: 400px !important;
+  font-size: 16px !important;
+  line-height: 180%;
+}
+/*  enlong */
+>>> .el-tabs__content {
+  overflow: initial;
+  flex: 1;
+}
+>>> .el-tabs__nav-wrap::after {
+  height: 0px;
+}
+
+.sendFaxList-headline {
+  background: #0091ff;
+  margin: 3px 10px;
+  height: 20px;
+  width: 3px;
+}
+>>> .el-card {
+  position: relative;
+}
+.cardCalss {
+
+}
+.cardCalss >>> .el-card__body {
+  padding: 0;
+}
+.informationDisposalNew_warp .faxFormClass >>> .el-form-item {
+  margin-bottom: 20px;
+}
+/* .faxFormitemClass >>> .el-form-item__label {
+  line-height: 20px;
+} */
+.MessageHandling {
+}
+>>> .MessageHandling > div {
+  /* height: 100%;
+  max-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+>>> .my-phone-right-main > div {
+  flex: 1;
+}
+>>> .my-phone-right-main > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+>>> .my-phone-right-main > div:nth-child(1) > div:nth-child(1) {
+  flex: 1;
+}
+/*  修改样式用  >>>  进行穿透 .MessageHandling>div> .my-phone-right-main-user*/
+>>> .msgTemplate {
+  display: none;
+}
+>>> .my-phone-right-main {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+>>> .contentModular {
+  margin: 12px 0 8px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+>>> .sendMsg {
+  overflow: hidden;
+}
+>>> .sendFaxList {
+  flex: 1;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+>>> .my-phone-right-main > div:nth-child(3) {
+  height: auto !important;
+  min-height: 200px;
+}
+>>> .my-fax-picture {
+  height: auto !important;
+  max-height: 83%;
+}
+>>> .faxListTable {
+  height: auto !important;
+  flex: 1;
+}
+>>> .el-tab-pane {
+  height: 100%;
+}
+.disposal-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  overflow: auto;
+}
+.disposal-right_tab-list {
+  margin: 0 0 10px 0px;
+  width: 100%;
+  min-width: 185px;
+  display: flex;
+}
+.disposal-right_tab-content {
+  flex: 1;
+}
+.flex_wrap > div:nth-child(2) {
+  flex: 1;
+}
+>>> .dialog-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+>>> .sendFaxBox {
+  min-height: 310px;
+  max-height: 310px;
+}
+>>> .el-dialog {
+  margin: 0 !important;
+}
+>>> .el-dialog__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eventDetail-box-list-left {
+  margin-right: 10px;
+}
+.eventDetail-box-list-right {
+  flex: 1;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  border-bottom: 1px solid #333;
+}
+.eventList {
+  padding-left: 0;
+  max-height: 190px;
+  overflow-y: scroll;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.eventList .evenyEvent {
+  padding: 10px 20px;
+}
+.eventList .evenyEvent:hover {
+  background-color: #f4f4f4;
+}
+.eventList .loadMore {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* 20210819 */
+.arrange-style {
+  float: left;
+  width: 98%;
+}
+.submit_btn {
+  margin-left: 10px;
+}

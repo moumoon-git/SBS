@@ -1,0 +1,311 @@
+<template>
+  <el-dialog
+    :title="!dataForm.id ? '新增' : '修改'"
+    :close-on-click-modal="false"
+    :visible.sync="visible"
+  >
+    <el-form
+      ref="dataForm"
+      :model="dataForm"
+      :rules="dataRule"
+      label-width="80px"
+      @keyup.enter.native="dataFormSubmit()"
+    >
+      <el-form-item
+        label="物资类型"
+        prop="eventTypeParentName"
+      >
+        <!-- <el-input v-model="dataForm.parentId" placeholder="父子id"></el-input> -->
+        <el-dialog
+          title="请选择要新增到的分组节点"
+          :visible.sync="treeDialogVisible"
+          width="30%"
+          append-to-body
+        >
+          <el-tree
+            ref="eventTypeTree"
+            :data="eventTypeList"
+            :props="eventTypeListTreeProps"
+            node-key="id"
+            :default-expand-all="true"
+            :auto-expand-parent="true"
+            :highlight-current="true"
+            :expand-on-click-node="false"
+            @current-change="eventTypeListTreeCurrentChangeHandle"
+          />
+          <span
+            slot="footer"
+            class="dialog-footer"
+          >
+            <el-button @click="treeDialogVisible = false">取 消</el-button>
+            <el-button
+              type="primary"
+              @click="treeDialogVisible = false"
+            >确 定</el-button>
+          </span>
+        </el-dialog>
+        <el-input
+          v-model="dataForm.eventTypeParentName"
+          v-popover:eventTypeListPopover
+          placeholder="选择分组"
+          :readonly="true"
+          @focus="gettingfocus"
+        />
+        <el-input
+          v-show="false"
+          v-model="dataForm.parentId"
+          :readonly="true"
+        />
+      </el-form-item>
+      <el-form-item
+        label="类型名称"
+        prop="name"
+      >
+        <el-input
+          v-model="dataForm.name"
+          placeholder="类型名称"
+        />
+      </el-form-item>
+    </el-form>
+    <span
+      slot="footer"
+      class="dialog-footer"
+    >
+      <el-button @click="visible = false">取消</el-button>
+      <el-button
+        type="primary"
+        @click="dataFormSubmit()"
+      >确定</el-button>
+    </span>
+  </el-dialog>
+</template>
+
+<script>
+import { treeDataTranslate } from '@/utils/index';
+
+export default {
+  components: {},
+  data() {
+    return {
+      eventTypeList: [],
+      eventTypeListTreeProps: {
+        label: 'name',
+        children: 'children',
+      },
+      treeDialogVisible: false,
+      visible: false,
+      dataForm: {
+        id: 0,
+        parentId: '',
+        name: '',
+        platformId: '',
+        createUserId: '',
+        gmtCreate: '',
+        modifiedUserId: '',
+        gmtModified: '',
+        isDeleted: '',
+        eventTypeParentName: '',
+      },
+      dataRule: {
+        eventTypeParentName: [{ required: true, message: '请选择一个分组' }],
+        parentId: [
+          { required: true, message: '父子id不能为空', trigger: 'blur' },
+        ],
+        name: [
+          { required: true, message: '类型名称不能为空', trigger: 'blur' },
+        ],
+        platformId: [
+          { required: true, message: '终端用户id不能为空', trigger: 'blur' },
+        ],
+        createUserId: [
+          { required: true, message: '创建者id不能为空', trigger: 'blur' },
+        ],
+        gmtCreate: [
+          { required: true, message: '创建时间不能为空', trigger: 'blur' },
+        ],
+        modifiedUserId: [
+          { required: true, message: '修改者Id不能为空', trigger: 'blur' },
+        ],
+        gmtModified: [
+          { required: true, message: '修改时间不能为空', trigger: 'blur' },
+        ],
+        isDeleted: [
+          {
+            required: true,
+            message: '删除 0：未删除  1：已删除不能为空',
+            trigger: 'blur',
+          },
+        ],
+      },
+    };
+  },
+
+  methods: {
+    // 分组树选中
+    eventTypeListTreeCurrentChangeHandle(data, node) {
+      this.dataForm.parentId = data.id;
+      this.dataForm.eventTypeParentId = data.id;
+      this.dataForm.eventTypeParentName = data.name;
+    },
+    // 当选择分组获取到焦点是才触发,并把顶级分组节点插入到树形中
+    gettingfocus(event) {
+      this.treeDialogVisible = true;
+      this.$http({
+        url: this.$http.adornUrl('/resoure/resourearticletype/tree'),
+        method: 'get',
+        params: this.$http.adornParams(),
+      })
+        .then(({ data }) => {
+          if (data && data.code === 0) {
+            console.log('/resoure/resourearticletype/tree', data);
+            this.eventTypeParentName = '';
+            data.tree.splice(0, 0, { id: 0, name: '顶级分组节点' });
+            // this.eventTypeList = treeDataTranslate(data.tree, 'id')
+            this.eventTypeList = data.tree;
+            console.log(
+              'this.eventTypeList',
+              this.eventTypeList,
+              treeDataTranslate,
+              this.dataForm,
+            );
+          } else {
+            this.$message.error('请选择你要新增到的分组节点');
+          }
+        })
+        .then(() => {
+          this.visible = true;
+        })
+        .then(() => {
+          // 新增
+          // this.dataForm.name = "";
+          this.dataForm.gmtCreate = '';
+          this.eventTypeListTreeSetCurrentNode();
+        });
+    },
+    // 分组树设置当前选中节点
+    eventTypeListTreeSetCurrentNode() {
+      this.$refs.eventTypeTree.setCurrentKey(this.dataForm.id);
+      // this.dataForm.eventTypeParentName = (this.$refs.eventTypeTree.getCurrentNode() || {})['name']
+    },
+    recursion(temporaryArray, id) {
+      let item;
+      for (let i = 0; i < temporaryArray.length; i++) {
+        if (temporaryArray[i].children) {
+          console.log(
+            'temporaryArray[i].children',
+            temporaryArray[i].name,
+            temporaryArray[i].children,
+          );
+          item = this.recursion(temporaryArray[i].children, id);
+        }
+        if (temporaryArray[i].id == id) {
+          item = temporaryArray[i];
+          break;
+        }
+      }
+      return item;
+    },
+    init(id) {
+      this.$http({
+        url: this.$http.adornUrl('/resoure/resourearticletype/tree'),
+        method: 'get',
+        params: this.$http.adornParams(),
+      }).then(({ data }) => {
+        if (data && data.code === 0) {
+          console.log('/resoure/resourearticletype/tree', data);
+          data.tree.splice(0, 0, { id: 0, name: '顶级分组节点' });
+          this.eventTypeList = data.tree;
+          console.log(
+            'this.eventTypeList',
+            this.eventTypeList,
+            treeDataTranslate,
+          );
+        } else {
+          this.$message.error('请选择你要新增到的分组节点');
+        }
+      });
+
+      this.dataForm.id = id || 0;
+      this.visible = true;
+      this.$nextTick(() => {
+        this.$refs.dataForm.resetFields();
+        if (this.dataForm.id) {
+          this.$http({
+            url: this.$http.adornUrl(
+              `/resoure/resourearticletype/info/${this.dataForm.id}`,
+            ),
+            method: 'get',
+            params: this.$http.adornParams(),
+          }).then(({ data }) => {
+            // console.log('data',data)
+            if (data && data.code === 0) {
+              // if (!data.resoureArticleType.parentId) {
+              //   this.dataForm.eventTypeParentName = "";
+              // } else {
+              this.dataForm.eventTypeParentName = this.recursion(
+                this.eventTypeList,
+                data.resoureArticleType.parentId,
+              ).name;
+              // }
+
+              // this.dataForm.eventTypeParentName = data.resoureArticleType.parentId
+              this.dataForm.parentId = data.resoureArticleType.parentId;
+              this.dataForm.name = data.resoureArticleType.name;
+              this.dataForm.platformId = data.resoureArticleType.platformId;
+              this.dataForm.createUserId = data.resoureArticleType.createUserId;
+              this.dataForm.gmtCreate = data.resoureArticleType.gmtCreate;
+              this.dataForm.modifiedUserId = data.resoureArticleType.modifiedUserId;
+              this.dataForm.gmtModified = data.resoureArticleType.gmtModified;
+              this.dataForm.isDeleted = data.resoureArticleType.isDeleted;
+              this.dataForm.eventTypeParentName = data.resoureArticleType.name;
+            } else {
+              this.$message.error(data.msg);
+            }
+          });
+        }
+      });
+    },
+    // 表单提交
+    dataFormSubmit() {
+      this.$refs.dataForm.validate((valid) => {
+        if (valid) {
+          this.$http({
+            url: this.$http.adornUrl(
+              `/resoure/resourearticletype/${
+                !this.dataForm.id ? 'save' : 'update'
+              }`,
+            ),
+            method: 'post',
+            data: this.$http.adornData({
+              id: this.dataForm.id || undefined,
+              parentId: this.dataForm.parentId,
+              name: this.dataForm.name,
+              // 'platformId': this.dataForm.platformId,
+              // 'createUserId': this.dataForm.createUserId,
+              // 'gmtCreate': this.dataForm.gmtCreate,
+              // 'modifiedUserId': this.dataForm.modifiedUserId,
+              // 'gmtModified': this.dataForm.gmtModified,
+              // 'isDeleted': this.dataForm.isDeleted
+            }),
+          }).then(({ data }) => {
+            if (data && data.code === 0) {
+              this.$message({
+                message: '操作成功',
+                type: 'success',
+                duration: 1500,
+                onClose: () => {
+                  this.visible = false;
+                  this.$emit('refreshDataList');
+                  this.$emit('close');
+                },
+              });
+            } else {
+              this.$message.error(data.msg);
+            }
+          });
+        }
+      });
+    },
+  },
+};
+</script>

@@ -1,0 +1,168 @@
+/*
+ * @Author: yanghaohao
+ * @Date: 2020-10-22 17:22:26
+ * @LastEditTime: 2020-10-22 17:35:05
+ * @LastEditors: Please set LastEditors
+ * @Description: 检查项目的样式
+ * @FilePath: \SBS\src\views\modules\GarbageClassification\CheckItem\checkItem.scss
+ */
+
+
+//选择分组弹窗的样式
+.selectGroupDialog{
+  font-size: 14px;
+/deep/ .el-dialog {
+  border-radius: 5px;
+  box-shadow: 0px 0px 23px 3px rgba(201, 201, 201, 0.27);
+}
+//弹窗表头样式
+/deep/ .el-dialog__header {
+  height: 40px;
+  line-height: 40px;
+  background-color: #f1f4f6;
+  border-radius: 5px 5px 0px 0px;
+  padding:0px;
+ /deep/ .el-dialog__title{
+    font-size:14px;
+    padding-left:20px;
+  }
+  /deep/.el-dialog__headerbtn{
+   top:0px;
+  }
+}
+/deep/ .el-dialog__body {
+  padding: 0px;
+  /deep/.el-input {
+    width:200px;
+  }
+  /deep/.el-input--medium .el-input__inner{
+    height:30px;
+    line-height: 30px;
+    width:200px;
+  }
+}
+.selectGroup_footer{
+  border-top:1px solid #f2f2f2;
+  text-align:right;
+  padding:10px;
+}
+}
+
+//新增树弹窗样式
+.dialog_tree {
+/deep/ .el-dialog {
+  border-radius: 4px;
+}
+/deep/ .el-dialog__header {
+  background-color: #f1f6ff;
+  border-radius: 4px;
+}
+/deep/ .el-dialog__body {
+  padding: 0px;
+}
+.tree_form {
+  padding: 20px;
+  border-bottom: 1px solid #f1f4ff;
+}
+.tree_foot {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 10px;
+}
+}
+//新增项目弹窗样式
+.add-task-dialog {
+font-size: 14px;
+/deep/ .el-dialog {
+  border-radius: 5px;
+  box-shadow: 0px 0px 23px 3px rgba(201, 201, 201, 0.27);
+}
+//弹窗表头样式
+/deep/ .el-dialog__header {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  background-color: #f1f4f6;
+  border-radius: 5px;
+}
+/deep/ .el-dialog__body {
+  padding: 0px;
+}
+.dialog_form {
+  padding: 20px;
+  border-bottom: 1px solid#f1f6ff;
+  /deep/.el-textarea__inner {
+    resize: none;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+    overflow: hidden;
+    line-height: 28px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    outline: none;
+    color: #666666;
+    background: #ffffff;
+    overflow: hidden;
+    padding: 0 10px;
+    &::-webkit-input-placeholder {
+      color: #b4b4b4;
+    }
+    &:-moz-placeholder {
+      color: #b4b4b4;
+    }
+    &::-moz-placeholder {
+      color: #b4b4b4;
+    }
+    &:-ms-input-placeholder {
+      color: #b4b4b4;
+    }
+    &:hover {
+      border-color: #b4b4b4;
+    }
+    &:focus {
+      border-color: #0091ff;
+    }
+  }
+  /deep/ .el-input--medium .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+    &::-webkit-input-placeholder {
+      color: #b4b4b4;
+    }
+    &:-moz-placeholder {
+      color: #b4b4b4;
+    }
+    &::-moz-placeholder {
+      color: #b4b4b4;
+    }
+    &:-ms-input-placeholder {
+      color: #b4b4b4;
+    }
+  }
+}
+//确认与取消按钮
+.footer-button {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+}
+.el-cascader__dropdown {
+  z-index: 3010!important;
+.el-cascader-panel {
+  /deep/ .el-cascader-menu__list {
+
+  }
+}
+}
+.cascaderStyle {
+  width: 150px;
+  /deep/ .el-input--medium .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+  }
+}

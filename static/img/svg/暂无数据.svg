@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="96px" viewBox="0 0 111 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>05</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.16,9.36 L25.92,9.36 C27.1129351,9.36 28.08,10.3270649 28.08,11.52 L28.08,21.24 C28.08,27.8011428 22.7611428,33.12 16.2,33.12 L11.88,33.12 C5.31885717,33.12 8.03508256e-16,27.8011428 0,21.24 L0,11.52 C-1.4609241e-16,10.3270649 0.96706494,9.36 2.16,9.36 Z" id="path-1"></path>
+        <filter x="-7.1%" y="-8.4%" width="114.2%" height="116.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-4" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.435294118   0 0 0 0 0.682352941   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="事件接报" transform="translate(-1000.000000, -558.000000)">
+            <g id="编组-3备份" transform="translate(767.000000, 71.000000)">
+                <g id="Group-5" transform="translate(16.000000, 434.000000)">
+                    <g id="编组-16">
+                        <g id="编组-14">
+                            <g id="05" transform="translate(218.000000, 53.000000)">
+                                <ellipse id="Oval-4-Copy-4" fill="#F7F7F7" cx="62.28" cy="84.96" rx="46.44" ry="10.8"></ellipse>
+                                <path d="M26.64,17.64 C25.6458875,17.64 24.84,18.4458875 24.84,19.44 L24.84,77.04 C24.84,78.0341125 25.6458875,78.84 26.64,78.84 L79.92,78.84 C80.9141125,78.84 81.72,78.0341125 81.72,77.04 L81.72,19.44 C81.72,18.4458875 80.9141125,17.64 79.92,17.64 L26.64,17.64 Z" id="Rectangle-66" stroke="#96969B" stroke-width="0.72" fill="#F7F7F8"></path>
+                                <path d="M45.5136766,22.68 L31.32,36.8604263 L31.32,82.08 C31.32,83.0741125 32.1258875,83.88 33.12,83.88 L86.4,83.88 C87.3941125,83.88 88.2,83.0741125 88.2,82.08 L88.2,24.48 C88.2,23.4858875 87.3941125,22.68 86.4,22.68 L45.5136766,22.68 Z" id="Rectangle-66-Copy" stroke="#96969B" stroke-width="0.72" fill="#FFFFFF"></path>
+                                <path d="M45,23.1891169 L31.8291169,36.36 L43.2,36.36 C44.1941125,36.36 45,35.5541125 45,34.56 L45,23.1891169 Z" id="Rectangle-66-Copy-2" stroke="#96969B" stroke-width="0.72" fill="#E5E5E5"></path>
+                                <g id="Group-17" transform="translate(65.520000, 52.560000)">
+                                    <path d="M7.39933594,15.48 C6.80286841,15.48 6.31933594,15.9635325 6.31933594,16.56 L6.31933594,22.32 C6.31933594,22.9164675 6.80286841,23.4 7.39933594,23.4 L25.2,23.4 C28.7542811,23.4 31.32,21.2281153 31.32,18 L31.32,15.84 C31.32,15.6411775 31.1588225,15.48 30.96,15.48 L7.39933594,15.48 Z M8.11933594,12.6 L31.68,12.6 C33.0717576,12.6 34.2,13.7282424 34.2,15.12 L34.2,18 C34.2,22.5729177 30.4929177,26.28 25.92,26.28 L8.11933594,26.28 C6.32993335,26.28 4.87933594,24.8294026 4.87933594,23.04 L4.87933594,15.84 C4.87933594,14.0505974 6.32993335,12.6 8.11933594,12.6 Z" id="Rectangle-19" stroke="#979797" stroke-width="0.72" fill="#BCD9FF" fill-rule="nonzero"></path>
+                                    <g id="Rectangle-67">
+                                        <use fill="#BCD9FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <path stroke="#96969B" stroke-width="0.72" d="M2.16,9.72 C1.16588745,9.72 0.36,10.5258875 0.36,11.52 L0.36,21.24 C0.36,27.6023203 5.51767968,32.76 11.88,32.76 L16.2,32.76 C22.5623203,32.76 27.72,27.6023203 27.72,21.24 L27.72,11.52 C27.72,10.5258875 26.9141125,9.72 25.92,9.72 L2.16,9.72 Z" stroke-linejoin="square"></path>
+                                    </g>
+                                    <path d="M6.27697266,7.93116211 C5.70164062,6.94737305 5.41397461,5.99352539 5.41397461,5.06961914 C5.41397461,3.68375977 6.14091797,3.4696582 6.14091797,2.1871582 C6.14091797,1.3321582 5.89860352,0.614882812 5.41397461,0.0353320312" id="Path-21" stroke="#96969B" stroke-width="0.72"></path>
+                                    <path d="M12.7569727,7.93116211 C12.1816406,6.94737305 11.8939746,5.99352539 11.8939746,5.06961914 C11.8939746,3.68375977 12.620918,3.4696582 12.620918,2.1871582 C12.620918,1.3321582 12.3786035,0.614882812 11.8939746,0.0353320312" id="Path-21-Copy" stroke="#96969B" stroke-width="0.72"></path>
+                                    <path d="M19.2369727,7.93116211 C18.6616406,6.94737305 18.3739746,5.99352539 18.3739746,5.06961914 C18.3739746,3.68375977 19.100918,3.4696582 19.100918,2.1871582 C19.100918,1.3321582 18.8586035,0.614882812 18.3739746,0.0353320312" id="Path-21-Copy-2" stroke="#96969B" stroke-width="0.72"></path>
+                                </g>
+                                <g id="Group-20" transform="translate(38.880000, 37.440000)" stroke="#96969B" stroke-width="0.72">
+                                    <circle id="Oval-13" fill="#FFFFFF" cx="3.24" cy="8.28" r="2.88"></circle>
+                                    <circle id="Oval-13-Copy" fill="#FFFFFF" cx="3.24" cy="19.8" r="2.88"></circle>
+                                    <circle id="Oval-13-Copy-2" fill="#FFFFFF" cx="3.24" cy="31.32" r="2.88"></circle>
+                                    <path d="M13.3484766,7.60130859 L39.2899219,7.60130859" id="Path-4" stroke-linecap="round"></path>
+                                    <path d="M13.3484766,14.0813086 L24.9025781,14.0813086" id="Path-4-Copy-2" stroke-linecap="round"></path>
+                                    <path d="M13.3484766,20.5613086 L21.5353125,20.5613086" id="Path-4-Copy-3" stroke-linecap="round"></path>
+                                    <path d="M13.3484766,27.0413086 L21.5353125,27.0413086" id="Path-4-Copy-4" stroke-linecap="round"></path>
+                                    <path d="M13.3484766,33.5213086 L21.5353125,33.5213086" id="Path-4-Copy-5" stroke-linecap="round"></path>
+                                    <path d="M13.3484766,1.12130859 L39.2899219,1.12130859" id="Path-4-Copy" stroke-linecap="round"></path>
+                                </g>
+                                <g id="Group-2-Copy-4" stroke="#DDDDDD" stroke-width="1.44">
+                                    <g id="Group-19" transform="translate(0.000000, 20.160000)" stroke-linecap="round">
+                                        <path d="M3.6094043,0.713012695 L3.6094043,7.9130127" id="Path-22"></path>
+                                        <path d="M7.20272461,4.33089844 L0.00272460938,4.33089844" id="Path-22-Copy"></path>
+                                    </g>
+                                    <g id="Group-14" transform="translate(105.734558, 17.166863) rotate(-315.000000) translate(-105.734558, -17.166863) translate(100.234558, 11.666863)" stroke-linecap="round">
+                                        <path d="M5.11529975,0.63670063 L5.13959964,3.27022454" id="Path-22-Copy-3"></path>
+                                        <path d="M5.12847514,7.72791822 L5.15625532,10.3833183" id="Path-22-Copy-5"></path>
+                                        <path d="M2.95509544,5.4912718 L0.246807415,5.51078629" id="Path-22-Copy-2"></path>
+                                        <path d="M10.0747768,5.50966763 L7.38090717,5.49114751" id="Path-22-Copy-4"></path>
+                                    </g>
+                                    <circle id="Oval-14" fill="#FFFFFF" cx="19.44" cy="3.6" r="2.88"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

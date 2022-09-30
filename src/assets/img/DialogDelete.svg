@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>弹框1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="38.6400127%" y1="0%" x2="38.6400133%" y2="40.8151719%" id="linearGradient-1">
+            <stop stop-color="#FF9E9E" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-2">
+            <stop stop-color="#FF9E9E" offset="0%"></stop>
+            <stop stop-color="#FF5E5E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#FCFDFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#FCFDFF" offset="0%"></stop>
+            <stop stop-color="#FF9C9C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="风险排查" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="新增检查/删除提示" transform="translate(-892.000000, -321.000000)">
+            <g id="win-copy-3" transform="translate(239.000000, 252.000000)">
+                <g id="弹框1" transform="translate(587.000000, 0.000000)">
+                    <g id="垃圾桶" transform="translate(66.000000, 69.000000)">
+                        <path d="M25.5608868,13.9551861 L27.8937994,16.2880876 C30.7734206,14.5701747 34.5565328,14.9508321 37.0357605,17.4300598 C39.9646927,20.358992 39.9646927,25.1077293 37.0357605,28.0366615 L36.3286537,28.7437683 C33.5016617,31.5707603 28.9793353,31.6691525 26.0343325,29.038945 L24.85378,30.218642 C23.2916828,31.7807392 20.7590229,31.7807392 19.1969257,30.218642 L14.2471783,25.2688946 C12.6850811,23.7067974 12.6850811,21.1741375 14.2471783,19.6120403 L19.9040325,13.9551861 C21.4661297,12.3930889 23.9987896,12.3930889 25.5608868,13.9551861 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                        <path d="M41.5,19 C42.8807119,19 44,20.1192881 44,21.5 C44,22.7096818 43.1408321,23.7186941 41.999426,23.9501074 L42,49 C42,52.3137085 39.3137085,55 36,55 L17,55 C13.6862915,55 11,52.3137085 11,49 L10.9995655,23.9499027 C9.85866183,23.7180997 9,22.7093254 9,21.5 C9,20.1192881 10.1192881,19 11.5,19 L41.5,19 Z" id="Rectangle-4" fill="url(#linearGradient-2)"></path>
+                        <rect id="Rectangle-6" fill="#FFFFFF" x="17" y="30" width="3" height="17" rx="1.5"></rect>
+                        <rect id="Rectangle-6-Copy" fill="#FFFFFF" x="25" y="30" width="3" height="17" rx="1.5"></rect>
+                        <rect id="Rectangle-6-Copy-2" fill="#FFFFFF" x="33" y="30" width="3" height="17" rx="1.5"></rect>
+                        <circle id="Oval-3" fill="url(#linearGradient-3)" cx="52.5" cy="20.5" r="2.5"></circle>
+                        <circle id="Oval-3-Copy-3" fill="url(#linearGradient-4)" cx="43.5" cy="8.5" r="1.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

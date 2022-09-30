@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>提示</title>
+    <g id="群防共治" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="查看等级响应-响应情况" transform="translate(-356.000000, -109.000000)">
+            <g id="弹框" transform="translate(335.000000, 59.000000)">
+                <g id="提示">
+                    <g transform="translate(21.000000, 50.000000)">
+                        <circle id="Oval-2" fill="#FFA901" cx="7" cy="7" r="7"></circle>
+                        <line x1="7" y1="3" x2="7" y2="8" id="Path-3" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <rect id="Rectangle-74" fill="#FFFFFF" x="6.57990773" y="9.97654943" width="1" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

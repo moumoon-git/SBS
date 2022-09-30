@@ -1,0 +1,228 @@
+/*
+ * @Author: yanghaohao
+ * @Date: 2020-10-22 17:37:05
+ * @LastEditTime: 2020-11-21 00:19:45
+ * @LastEditors: liukanglin
+ * @Description: 人员管理的样式
+ * @FilePath: \product_SBS\src\views\modules\GarbageClassification\PersonManage\personManage.less
+ */
+//选择分组弹窗的样式
+.selectGroupDialog{
+    font-size: 14px;
+  /deep/ .el-dialog {
+    border-radius: 5px;
+    box-shadow: 0px 0px 23px 3px rgba(201, 201, 201, 0.27);
+  }
+  //弹窗表头样式
+  /deep/ .el-dialog__header {
+    height: 40px;
+    line-height: 40px;
+    background-color: #f1f4f6;
+    border-radius: 5px 5px 0px 0px;
+    padding:0px;
+   /deep/ .el-dialog__title{
+      font-size:14px;
+      padding-left:20px;
+    }
+    /deep/.el-dialog__headerbtn{
+     top:0px;
+    }
+  }
+  /deep/ .el-dialog__body {
+    padding: 0px;
+    /deep/.el-input {
+      width:200px;
+    }
+    /deep/.el-input--medium .el-input__inner{
+      height:30px;
+      line-height: 30px;
+      width:200px;
+    }
+  }
+  .selectGroup_footer{
+    border-top:1px solid #f2f2f2;
+    text-align:right;
+    padding:10px;
+  }
+}
+//重置校验码的弹窗样式
+.resetDialog{
+
+  /deep/ .el.dialog{
+      border-radius: 5px;;
+   }
+   /deep/.el-dialog__header {
+    background-color: #f1f4f6;
+    border-radius: 5px;
+    height:40px;
+    line-height:40px;
+    display: flex;
+    .el-dialog__title {
+      font-size:14px;
+      line-height:5px;
+      color:#333333
+    }
+        .el-dialog__headerbtn{
+        top:0px;
+   
+      }
+  }
+  /deep/.el-dialog__body{
+    padding:0px;
+  }
+  .reset_tip{
+   margin:20px;
+   .tip_char{
+     margin-left: 20px;
+     color:#666666
+   }
+  }
+  .reset_password{
+    padding:0px 70px
+  }
+  
+  .dialog_footer{
+    border-top:1px solid #f2f2f2;
+ text-align: right;
+    padding: 10px 20px;
+  }
+
+}
+//右侧表头组件样式
+
+.content-header-title {
+  border-left: 3px solid rgba(0, 145, 255, 1);
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 14px;
+  margin-top: 7px;
+}
+
+.header-select {
+  margin-left: 5px;
+}
+.content-header-char {
+  font-size: 14px;
+  color: #666666;
+  margin-left: 10px;
+}
+.content-header-num {
+  font-size: 14px;
+  color: #333333;
+  margin-left: 5px;
+}
+.content-header-btn {
+  margin-left: 5px;
+}
+
+//新增树弹窗样式
+.dialog_tree {
+  /deep/ .el-dialog {
+    border-radius: 5px;
+  }
+  /deep/ .el-dialog__header {
+    background-color: #f1f6ff;
+    border-radius: 4px;
+  }
+  /deep/ .el-dialog__body {
+    padding: 0px;
+  }
+  .tree_form {
+    padding: 20px;
+    border-bottom: 1px solid #f1f4ff;
+  }
+  .tree_foot {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 10px;
+  }
+}
+//新增人员弹窗相关样式
+.add-human-dialog {
+  /deep/.el-dialog {
+    border-radius: 5px;
+  }
+  /deep/.el-dialog__header {
+    background-color: #f1f4f6;
+    border-radius: 5px;
+    height:40px;
+    line-height:40px;
+    display: flex;
+    .el-dialog__title {
+      font-size:14px;
+      line-height:5px;
+      color:#333333
+    }
+        .el-dialog__headerbtn{
+        top:0px;
+   
+      }
+  }
+  /deep/ .el-dialog__body {
+    padding: 0px;
+  }
+  .dialog_form {
+    padding: 20px;
+    border-bottom: 1px solid#f1f6ff;
+        /deep/ .el-input--medium .el-input__inner {
+      height: 30px;
+      line-height: 30px;
+      width: 150px;
+      &::-webkit-input-placeholder {
+        color: #b4b4b4;
+      }
+      &:-moz-placeholder {
+        color: #b4b4b4;
+      }
+      &::-moz-placeholder {
+        color: #b4b4b4;
+      }
+      &:-ms-input-placeholder {
+        color: #b4b4b4;
+      }
+    }
+  }
+  //确认与取消按钮
+  .footer_button {
+  text-align: right;
+    padding: 10px;
+  }
+
+  //上传照片样式
+  .avatar-uploader /deep/.el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+   width:90px;
+   height:90px;
+   .avatar_upload_tip{
+      color:#0091FF;
+      font-size: 5px;
+      display: inline-flex;
+      justify-content: center;
+   }
+  }
+  .avatar-uploader /deep/.el-upload:hover {
+    border-color: #409eff;
+  }
+  .avatar-uploader-icon {
+    font-size: 14px;
+    color: #8c939d;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding-top:10px;
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
+    display: block;
+  }
+}

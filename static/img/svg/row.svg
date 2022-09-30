@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="25px" viewBox="0 0 17 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>路径</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.5318261%" y1="16.5229101%" x2="100%" y2="94.7012309%" id="linearGradient-1">
+            <stop stop-color="#69C5FF" offset="0%"></stop>
+            <stop stop-color="#1FA1FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="事件接报-短信" transform="translate(-1066.000000, -366.000000)" fill-rule="nonzero" stroke="url(#linearGradient-1)" stroke-width="4">
+            <g id="编组-3备份" transform="translate(767.000000, 71.000000)">
+                <polyline id="路径" transform="translate(302.445436, 307.445436) rotate(-315.000000) translate(-302.445436, -307.445436) " points="294.945436 301.277998 309.945436 299.945436 308.612875 314.945436"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

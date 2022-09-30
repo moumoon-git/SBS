@@ -1,0 +1,60 @@
+.sv-pagination {
+    .el-pagination {
+        margin: 0;
+        * {
+            font-size: 14px;
+            font-weight: normal;
+            color: #495060;
+        }
+        button:disabled i {
+            color: #DDDEE1;
+        }
+        .el-pagination__total {
+            font-size: 16px;
+        }
+        .btn-prev,
+        .number,
+        .btn-next {
+            width: 30px;
+            min-width: 0;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #DDDEE1;
+            border-radius: 2px;
+            padding: 0;
+        }
+        li.active {
+            border-color: #0091FF !important;
+            color: #ffffff !important;
+        }
+        .more {
+            color: #CCCCCC;
+        }
+        .el-select {
+            .el-input {
+                width: 90px;
+                .el-input__inner {
+                    width: 85px;
+                    height: 30px;
+                    padding: 0 20px 0 5px;
+                    border-radius: 2px;
+                }
+                .el-select__caret::before {
+                    background: no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAADgAAAAANlRePAAABeklEQVQ4Eb1SsUrEQBC9TXEBwc5gL/gBFsKh5BIrK1sNglwh9lp4foMnqL9wCBJrsbAQk0tODiysUgn2EvsjFonvHVnY80xcLFwYZjIz772Z3TQa/33CMNxJkqT5V11iwbEt8YYM6AeDwUFRFH6apn14odZ0YmJK7A25iJkSMAzDF0K8IO+h4VyHVO0pMR45yMXazJSj0Wgxy7InTLOE+onruj2VpCoOgqCL2inI30zTXGu1Wu/snRFgEne4DDeELWCSjm3bV8xXnSiK9vI876P+AVt3HOdV9v4owCImWoV7xERN2Fa73b6XINXjWjax7S3sE/kNbPys1isF2PQbWGeIqUdWlRlzalzRPjaYg92VVzdpY8wca+yp2rB2AymITY5xxz2QTR4QhGI8Hg/5IyDugvxM9n73WgIEYeILEB5ChL9xA/EK4ks86BG/q462AAgFRK5B5JVkPsh3IVJUkTNf+wYqkESWZXXgH2hlXEuu4rXjOI7nabqAL81rpopzt9VwAAAAAElFTkSuQmCC) center/100% 40%;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .el-pagination__jump {
+            margin: 0;
+            .el-input {
+                width: 35px;
+                .el-input__inner {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="48px" viewBox="0 0 49 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>弹框1</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.09736272%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5DCC85" offset="0%"></stop>
+            <stop stop-color="#9CEB8E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FCFDFF" offset="0%"></stop>
+            <stop stop-color="#D7DEEA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#FCFDFF" offset="0%"></stop>
+            <stop stop-color="#99EA8D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="通用图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-120.000000, -993.000000)" id="编组-7">
+            <g transform="translate(66.000000, 596.000000)">
+                <g id="弹框3" transform="translate(0.000000, 333.000000)">
+                    <g id="Group-3" transform="translate(51.000000, 64.000000)">
+                        <circle id="Oval-9" fill="url(#linearGradient-1)" cx="22" cy="27" r="19"></circle>
+                        <circle id="Oval-3" fill="url(#linearGradient-2)" cx="47.5" cy="15.5" r="2.5"></circle>
+                        <circle id="Oval-3-Copy-3" fill="url(#linearGradient-3)" cx="38.5" cy="3.5" r="1.5"></circle>
+                        <polyline id="Path-4" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="13.6951537 27.8654902 19.4304131 33.4769511 31.6951537 21.4769511"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

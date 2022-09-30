@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>发布</title>
+    <g id="通用图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="表格通用图标" transform="translate(-708.000000, -133.000000)" fill="#0091FF">
+            <g id="编组-3" transform="translate(64.000000, 29.000000)">
+                <g id="编组备份" transform="translate(65.000000, 104.000000)">
+                    <path d="M580,8.74740704 L580,8.74959455 L584.831514,10.4209482 L590.783852,4.64600065 L586.16904,10.8671786 L591.336455,12.6910499 L594,1 L580,8.74740704 Z M586.006407,15 L587.707243,12.3436622 L586.006407,11.7844109 L586.006407,15 Z" id="发布"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

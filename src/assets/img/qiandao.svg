@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="56px" viewBox="0 0 57 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>待确认</title>
+    <defs>
+        <linearGradient x1="78.8605536%" y1="100%" x2="22.5196544%" y2="2.39116691%" id="linearGradient-1">
+            <stop stop-color="#2B80FF" offset="0%"></stop>
+            <stop stop-color="#65BCFF" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="49.9998338 0.00584996939 0.00217182523 50.0035119 0.00217182523 29.2444397 0.943013647 28.3073807 29.2955297 2.84217094e-14"></polygon>
+        <filter x="-8.0%" y="-8.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.605346709   0 0 0 0 0.746614862   0 0 0 0 0.918154762  0 0 0 0.510303442 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="垃圾分类管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="查看考勤统计备份" transform="translate(-339.000000, -359.000000)">
+            <g id="弹框" transform="translate(282.000000, 69.000000)">
+                <g id="组备份-2" transform="translate(40.000000, 204.000000)">
+                    <g id="待确认" transform="translate(19.000000, 88.000000)">
+                        <g id="底色" transform="translate(0.079690, 0.000000)">
+                            <rect id="矩形" fill="#C4242B" x="47.9998338" y="0" width="2" height="2"></rect>
+                            <rect id="矩形" fill="#C4242B" x="0" y="48" width="2" height="2"></rect>
+                            <g id="矩形备份-14">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                        </g>
+                        <text id="签到" transform="translate(24.242641, 24.267767) rotate(-45.000000) translate(-24.242641, -24.267767) " font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="12" letter-spacing="-1" fill="#FFFFFF">
+                            <tspan x="13.2426407" y="25.267767">签到</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

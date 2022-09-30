@@ -1,0 +1,35 @@
+# 缓存
+cache:
+  paths:
+    # node 下载的依赖
+    - node_modules
+    # 打包结果
+    - dist
+# pipeline 阶段
+stages:
+  # 构建
+  - build
+  # 部署
+  - deploy
+# build 阶段的工作
+build-job:
+  only:
+    - migration
+  stage: build
+  script:
+    - git status
+    - npm -v
+    - node -v
+    # - npm install
+    # - npm run build
+# deploy 阶段的工作
+deploy-job:
+  only:
+    - migration
+  stage: deploy
+  script:
+    - node -v
+    # - sshpass -p chinaemt ssh root@192.168.1.189
+    # - rm -rf /var/www/html/SOC/dist
+    # - exit
+    # - sshpass -p chinaemt scp dist root@192.168.1.189:/var/www/html/SOC

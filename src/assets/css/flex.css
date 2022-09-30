@@ -1,0 +1,64 @@
+/** 
+ * @author cr
+ */
+
+ 
+.flex-cen-xy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexc-cen-x{
+    display: flex;
+    align-items: center;
+}
+.flexc-cen-y{
+    display: flex;
+    justify-content: center;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.flex-y {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+.flex-xy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.flex-x {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+.flex-spc-x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-x-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-x-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flex-y-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.flex-y-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}

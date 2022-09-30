@@ -1,0 +1,34 @@
+@import './shared.scss';
+
+.el-date-editor.el-input--medium {
+  &.sbs-date-picker,
+  &.sbs-time-select {
+    .el-input__inner {
+      height: $height;
+      line-height: $height;
+    }
+  
+    .el-input__icon {
+      line-height: $height;
+    }
+  }
+}
+
+.el-range-editor--medium.sbs-date-picker {
+  width: 275px;
+  height: $height;
+  line-height: $height;
+  padding-right: 0px;
+
+  .el-range-separator {
+    margin-top: -6px !important;
+  }
+
+  .el-input__icon {
+    line-height: $height;
+
+    &.el-range__close-icon {
+      margin-bottom: 8px;
+    }
+  }
+}

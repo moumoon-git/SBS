@@ -1,0 +1,82 @@
+/* DIN字体 */
+@font-face {
+    font-family: 'DIN-BlackAlternate';
+    src: url('DIN-BlackAlternate.otf');
+} 
+@font-face {
+    font-family: 'DIN-Black';
+    src: url('DIN-Black.otf');
+} 
+@font-face {
+    font-family: 'DIN-Bold';
+    src: url('DIN-Bold.otf');
+} 
+
+@font-face {
+    font-family: 'DIN-BoldAlternate';
+    src: url('DIN-BoldAlternate.otf');
+} 
+@font-face {
+    font-family: 'DIN-Euro';
+    src: url('DIN-Euro.otf');
+} 
+@font-face {
+    font-family: 'DIN-Light';
+    src: url('DIN-Light.otf');
+}
+
+@font-face {
+    font-family: 'DIN-LightAlternate';
+    src: url('DIN-LightAlternate.otf');
+} 
+@font-face {
+    font-family: 'DIN-Medium';
+    src: url('DIN-Medium.otf');
+} 
+@font-face {
+    font-family: 'DIN-MediumAlternate';
+    src: url('DIN-MediumAlternate.otf');
+} 
+
+@font-face {
+    font-family: 'DIN';
+    src: url('DIN-Regular.otf');
+} 
+@font-face {
+    font-family: 'DIN-RegularAlternate';
+    src: url('DIN-RegularAlternate.otf');
+} 
+
+/* 思源字体 */
+
+@font-face {
+    font-family: 'siYuanHeiTi-Bold';
+    src: url('SourceHanSansCN-Bold.otf');
+} 
+@font-face {
+    font-family: 'siYuanHeiTi-ExtraLight';
+    src: url('SourceHanSansCN-ExtraLight.otf');
+} 
+@font-face {
+    font-family: 'siYuanHeiTi-Light';
+    src: url('SourceHanSansCN-Light.otf');
+} 
+
+@font-face {
+    font-family: 'siYuanHeiTi-Medium';
+    src: url('SourceHanSansCN-Medium.otf');
+} 
+@font-face {
+    font-family: 'siYuanHeiTi-Normal';
+    src: url('SourceHanSansCN-Normal.otf');
+} 
+@font-face {
+    font-family: 'siYuanHeiTi';
+    src: url('SourceHanSansCN-Regular.otf');
+}
+
+/* 庞门正道标题字体 */
+@font-face {
+    font-family: 'PangMenZhengDao';
+    src: url('庞门正道标题体.ttf');
+}

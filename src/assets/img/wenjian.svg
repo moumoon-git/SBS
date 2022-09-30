@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>email (1)</title>
+    <desc>Created with Sketch.</desc>
+    <g id="风险排查" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="查看工单" transform="translate(-725.000000, -158.000000)" fill-rule="nonzero">
+            <g id="win-copy-4" transform="translate(271.000000, 57.000000)">
+                <g id="窗体">
+                    <g id="编组-9备份" transform="translate(427.000000, 40.000000)">
+                        <g id="编组-10" transform="translate(16.000000, 46.000000)">
+                            <g id="编组-15" transform="translate(11.000000, 15.000000)">
+                                <g id="email-(1)">
+                                    <path d="M15.7591886,16.05576 L0.0222857143,16.05576 L0.0222857143,6.58237714 L7.61832,0.100422857 C7.77524571,-0.0334971429 8.00619429,-0.0334971429 8.16312,0.100422857 L15.7591886,6.58237714 L15.7591886,16.05576 L15.7591886,16.05576 Z" id="路径" fill="#DA8542"></path>
+                                    <polygon id="路径" fill="#FAD362" points="15.7591886 16.05576 0.0222857143 16.05576 7.89072 10.2764914"></polygon>
+                                    <path d="M4.47644571,1.32003429 L2.22545143,3.57102857 L2.22545143,11.84472 L13.5560229,11.84472 L13.5560229,1.94952 C13.5560229,1.60186286 13.2741943,1.32003429 12.9265371,1.32003429 L4.47644571,1.32003429 Z" id="路径" fill="#EBEFF2"></path>
+                                    <polygon id="路径" fill="#F4C158" points="15.7591886 16.05576 0.0222857143 16.05576 7.89072 10.2764914"></polygon>
+                                    <g id="编组" transform="translate(0.000000, 1.302857)">
+                                        <polygon id="路径" fill="#FACD6F" points="15.7591886 5.27952 7.89072 8.97363429 15.7591886 14.7529029"></polygon>
+                                        <polygon id="路径" fill="#FACD6F" points="0.0222857143 5.27952 7.89072 8.97363429 0.0222857143 14.7529029"></polygon>
+                                        <polygon id="路径" fill="#E0E5E8" points="4.47644571 2.26820571 4.47644571 0.0172114286 2.22545143 2.26820571"></polygon>
+                                    </g>
+                                    <g id="编组" transform="translate(4.662857, 2.948571)" fill="#D4D5DB">
+                                        <rect id="矩形" x="0.0167314286" y="2.57461714" width="6.42229714" height="1"></rect>
+                                        <rect id="矩形" x="0.0167314286" y="1.28993143" width="6.42229714" height="1"></rect>
+                                        <rect id="矩形" x="2.23457143" y="0.00548571429" width="4.20510857" height="1"></rect>
+                                        <rect id="矩形" x="0.0167314286" y="3.85906286" width="6.42229714" height="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

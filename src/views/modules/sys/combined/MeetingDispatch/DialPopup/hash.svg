@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="37px" viewBox="0 0 65 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D8D8D8" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="60" height="32" rx="8"></rect>
+        <filter x="-9.2%" y="-10.9%" width="118.3%" height="134.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.882670969   0 0 0 0 0.882670969   0 0 0 0 0.882670969  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="41.2504628%" y1="-6.09200421%" x2="9.03964931%" y2="59.0236083%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.18" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="值班值守-通讯调度" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会议调度-通讯录" transform="translate(-1268.000000, -564.000000)">
+            <g id="2" transform="translate(1106.000000, 373.000000)">
+                <g id="编组-11" transform="translate(10.000000, 61.000000)">
+                    <g id="编组-10备份-12" transform="translate(154.000000, 132.000000)">
+                        <g id="椭圆形" transform="translate(0.000000, 0.200000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="蒙版">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                            <circle fill="url(#linearGradient-5)" mask="url(#mask-3)" cx="30.4" cy="-16" r="30.4"></circle>
+                        </g>
+                        <text id="#" font-family="SFCompactText-Semibold, SF Compact Text" font-size="24" font-weight="500" fill="#333333">
+                            <tspan x="24" y="24">#</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

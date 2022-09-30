@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切图</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.9155673%" id="linearGradient-1">
+            <stop stop-color="#B8E1FF" offset="0%"></stop>
+            <stop stop-color="#0091FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="登录页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="社会治理欢迎页" transform="translate(-584.000000, -943.000000)" fill-rule="nonzero">
+            <g id="编组" transform="translate(584.000000, 943.000000)">
+                <path d="M0,39.7867193 C0,54.001145 7.58330549,67.1358161 19.8933592,74.243029 C32.2034129,81.3502419 47.3700246,81.3502419 59.6800783,74.243029 C71.990132,67.1358161 79.5734375,54.001145 79.5734375,39.7867193 C79.5734375,25.5722937 71.990132,12.4376226 59.6800783,5.33040968 C47.3700246,-1.77680323 32.2034129,-1.77680323 19.8933592,5.33040968 C7.58330549,12.4376226 0,25.5722937 0,39.7867193 L0,39.7867193 Z" id="路径" fill="url(#linearGradient-1)"></path>
+                <polygon id="路径" fill="#FFFFFF" points="53.9859375 34.0348437 42.5726563 34.0348437 42.4392969 10.5592969 25.7015625 43.6526562 37.1148438 43.6526562 37.2482031 67.1282031"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

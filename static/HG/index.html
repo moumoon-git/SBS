@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>vis.js demo</title>
+
+    <style>
+        .mainContainer {
+            display: block;
+            width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .urlInput {
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .centeredVideo {
+            display: block;
+            width: 100%;
+            height: 576px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+
+        .controls {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        .logcatBox {
+            border-color: #CCCCCC;
+            font-size: 11px;
+            font-family: Menlo, Consolas, monospace;
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body onload="login()">
+    
+    <div class="mainContainer">
+        <!-- <input name="urlinput" class="urlInput" type="text" value="http://127.0.0.1/src/rtp.json"/> -->
+        <video id="v0" name="videoElement" class="centeredVideo" controls autoplay width="1024" height="576">
+            Your browser is too old which doesn't support HTML5 video.
+        </video>
+        <!-- <div class="controls">
+            <button onclick="start_video(44,44,'v0')">Load</button>
+            <button onclick="vis_start()">Start</button>
+            <button onclick="vis_pause()">Pause</button>
+            <button onclick="vis_destroy()">Destroy</button>
+            <input style="width:100px" type="text" name="seekpoint"/>
+            <button onclick="vis_seekto()">SeekTo</button>
+			<button onclick="login()">Login</button>
+        </div>
+        <textarea name="logcatbox" class="logcatBox" rows="10" readonly></textarea> -->
+    </div>
+
+    <script src="./vis.min.js"></script>
+	<script src="./jquery-3.3.1.min.js"></script>
+	<script src="./eventsource.min.js"></script>
+	
+	
+    
+    <script>
+        var user = '';
+		var key = '';
+		var ip = '';
+        var guid = '';
+        var host = '';
+        var url = location.href;
+        var param = url.split('?')[1].split('&');
+        user = param[0].split('user=')[1] || 'admin';
+        key = param[1].split('key=')[1] || '';
+        ip = param[2].split('ip=')[1] || '';
+        ip = ip;
+        guid = param[3].split('guid=')[1] || '';
+        host = param[4].split('host=')[1] || '';
+
+		var token='';
+		var player;
+		var playUrl;
+		function login(){ //第一步：登录,获取token
+			$.ajax({
+				url: ip + '/auth',  ///apis相当于接口http://192.168.5.84:8072,配合nginx反向代理解决跨域
+				contentType: "application/json",
+				type: 'POST',
+				data:JSON.stringify({'username': user, 'password': key}),
+			    success:function (response) {
+                    token = response.token;
+                    console.log(token);
+                    start_video(guid, guid, 'v0');
+					//心跳
+                    if (!!window.EventSource) {
+                        var eventSourceInitDict = {headers: {'Authorization': token}};
+                        // var source = new EventSourcePolyfill('/apis/sse/info',eventSourceInitDict);
+                        var source = new EventSourcePolyfill(ip + '/sse/info',eventSourceInitDict);
+                        source.onopen = function(event) {
+                            // handle open event
+                        };
+                        source.onmessage = function(event) {
+                            var da = event.data;
+                            console.log("hb_data:"+da);
+                        };
+                    }
+			}
+			})
+		}
+		
+		function test(){
+			vis_load('http://192.168.5.230:8000/RealVideo/W3C_MSE?cameraid=44','v0');
+		}
+		
+		//Params: 摄像头id,sipid,video标签id
+		
+        function start_video(camid,code,vid){ //第二步：根据设备编码获取流媒体地址
+            console.log('starting')
+		 $.ajax({
+			  type: 'get',
+            //   url: ip + '/realvideo/play/1/'+code,
+            url: `${host}/risk/riskcamera/getHGUrl?ip=${ip}&cameraId=${camid}&HGtoken=${token}`,
+              beforeSend : function(xhr) {
+                    xhr.setRequestHeader("Authorization", token);
+                },
+			  success: function(data) {
+                //第三步：向流媒体发送请求获取handle
+                var url = data.location+"/RealVideo/W3C_MSE?cameraid="+camid;
+                var xmlhttp;
+                if (window.XMLHttpRequest){
+                    xmlhttp=new XMLHttpRequest();}
+                else{
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+                xmlhttp.onreadystatechange=function(){
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200){	
+                        // 第四步：使用获取的handle加载视频
+                            playUrl = data.location+'/ACK/W3C_MSE?ctrlHandle='+xmlhttp.responseText;
+                            vis_load(playUrl,vid);
+                    }else if(Number(xmlhttp.status)>=400){
+                        alert("网络错误");
+                    }
+                }
+                xmlhttp.open("GET",url,true);
+                //xmlhttp.setRequestHeader('Authorization', 'Bearer'+$cookieStore.get('token') );
+                xmlhttp.send();
+			  },
+			  error: function(err) {
+				alert("err");
+			  }
+		 })
+		}
+	    //加载视频的方法
+        function vis_load(url,vid) { 
+			var element = document.getElementById(vid);//
+                var mediaDataSource = 
+                {
+                    "type": "ps",  // now support ps, rtp, flv
+                    "isLive": "true",
+                    "duration": "0",
+                    "filesize": "0",
+                    "cors":"true",
+                    "url": url,  // change this url to switch different camera
+                    "withCredentials": "false"
+                };
+
+                player = visjs.createPlayer(mediaDataSource, {
+                    enableWorker: false,
+                    lazyLoadMaxDuration: 3 * 60,
+                    seekType: 'range',
+                });
+                player.attachMediaElement(element);
+                player.load();
+        }
+
+        function vis_start() {
+            player.play();
+        }
+
+        function vis_pause() {
+            player.pause();
+        }
+
+		//关闭视频
+        function vis_destroy() {
+			xmlRequest(playUrl.replace("ACK","stop"));
+            player.pause();
+            player.unload();
+            player.detachMediaElement();
+            player.destroy();
+            player = null;
+			playUrl = null;
+        }
+
+        function vis_seekto() {
+            var input = document.getElementsByName('seekpoint')[0];
+            player.currentTime = parseFloat(input.value);
+        }
+
+        function getUrlParam(key, defaultValue) {
+            var pageUrl = window.location.search.substring(1);
+            var pairs = pageUrl.split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                var keyAndValue = pairs[i].split('=');
+                if (keyAndValue[0] === key) {
+                    return keyAndValue[1];
+                }
+            }
+            return defaultValue;
+        }
+
+	  //使用XMLHttpRequest发送请求
+	  function xmlRequest(myurl,headers,cb){
+        var xmlhttp;
+        if (window.XMLHttpRequest){
+            xmlhttp=new XMLHttpRequest();}
+        else{
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+		xmlhttp.onreadystatechange=function(){
+            if (xmlhttp.readyState==4) {
+                var info = xmlhttp.responseText;
+                if (xmlhttp.status != 200 ){
+                    // alert("网络错误");
+                    layer.msg('网络错误', {
+                        time: 2000
+                    });
+                    info = "failed";
+                }
+                if(typeof cb === 'function'){
+                    cb(info);
+                }
+                // }else if(Number(xmlhttp.status)>=300){
+            }
+        }
+        xmlhttp.timeout = 15000; //超时时间15s
+        xmlhttp.ontimeout = function (event) {
+            // alert("请求超时");
+            layer.msg('请求超时', {
+                time: 2000 //2s后自动关闭
+                // btn: ['关闭']
+            });
+            cb("failed");
+        }
+        xmlhttp.open("GET",myurl,true);
+        for(var key in headers){
+            xmlhttp.setRequestHeader(key, headers[key]);
+        }
+        xmlhttp.setRequestHeader('Authorization', 'Bearer'+token );
+        xmlhttp.send();
+
+    }
+        
+    </script>
+    
+</body>
+
+</html>

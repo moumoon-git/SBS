@@ -1,0 +1,114 @@
+.admin-seats-management {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 3px 10px 2px rgba(54, 121, 225, 0.09);
+  border-radius: 3px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  // 头部
+  .admin-seats-management_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 10px 0;
+
+    // 左边
+    .admin-seats-management_header-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .searchForm-item {
+        margin-right: 20px;
+
+        & > span {
+          margin-right: 10px;
+          font-weight: 400;
+          color: #999999;
+        }
+      }
+    }
+
+    // 右边
+    .admin-seats-management_header-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .sv-button {
+        padding: 0 12px;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .admin-seats-management_body {
+    .button-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    // 图形按钮
+    .icon-button {
+      outline: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-see {
+      display: block;
+      width: 17px;
+      height: 12px;
+      background: url('../assets/svg/see.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .icon-see:hover {
+      display: block;
+      width: 17px;
+      height: 12px;
+      background: url('../assets/svg/see_active.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .icon-edit {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: url('../assets/svg/edit.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .icon-edit:hover {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: url('../assets/svg/edit_active.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .icon-delete {
+      display: block;
+      width: 14px;
+      height: 15px;
+      background: url('../assets/svg/delete.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .icon-delete:hover {
+      display: block;
+      width: 14px;
+      height: 15px;
+      background: url('../assets/svg/delete_active.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

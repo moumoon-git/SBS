@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="69px" viewBox="0 0 86 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <defs>
+        <linearGradient x1="62.890625%" y1="107.03708%" x2="15.8319729%" y2="13.9021688%" id="linearGradient-1">
+            <stop stop-color="#F1F6FC" offset="0%"></stop>
+            <stop stop-color="#F8FBFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="垃圾分类管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.898228237">
+        <g id="查看考勤统计备份" transform="translate(-762.000000, -364.000000)" fill="url(#linearGradient-1)">
+            <g id="弹框" transform="translate(282.000000, 69.000000)">
+                <g id="组备份-2" transform="translate(40.000000, 204.000000)">
+                    <g id="编组-12备份-6" transform="translate(283.000000, 89.000000)">
+                        <g id="编组-11" transform="translate(2.000000, 2.000000)">
+                            <g id="编组-12" transform="translate(155.000000, -63.000000)">
+                                <circle id="椭圆形" cx="60.5" cy="60.5" r="60.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

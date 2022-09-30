@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="35px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M 0 0  L 1024 0  L 1024 1024  L 0 1024  Z " fill-rule="evenodd" fill="black" id="path1" />
+    <clipPath id="clip2">
+      <use xlink:href="#path1" />
+    </clipPath>
+    <filter x="-50.00%" y="-50.00%" width="200.00%" height="200.00%" filterUnits="objectBoundingBox" id="filter3">
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0  " in="SourceGraphic" />
+    </filter>
+    <filter x="1107px" y="1795px" width="35px" height="35px" filterUnits="userSpaceOnUse" id="filter4">
+      <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetInner" />
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetInner" result="shadowGaussian" />
+      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.666666666666667  0 0 0 0 0.666666666666667  0 0 0 0 0.666666666666667  0 0 0 0.349019607843137 0  " in="shadowComposite" />
+    </filter>
+    <g id="widget5">
+      <g transform="matrix(0.0244140625 0 0 0.0244140625 1112 1795 )" clip-path="url(#clip2)" filter="url(#filter3)">
+        <path d="M563.53961182 520.52813721L835.32763673 248.7401123c13.71917724-13.71917724 13.71917724-36.33728028-2e-8-50.05645751l-1.48315429-1.4831543c-13.71917724-13.71917724-36.33728028-13.71917724-50.05645752 0L512 469.35931396l-271.7880249-272.15881347c-13.71917724-13.71917724-36.33728028-13.71917724-50.05645752 0l-1.48315429 1.4831543c-14.08996583 13.71917724-14.08996583 36.33728028 0 50.05645751l271.78802489 271.78802491L188.67236327 792.31616211c-13.71917724 13.71917724-13.71917724 36.33728028 2e-8 50.05645752l1.48315429 1.4831543c13.71917724 13.71917724 36.33728028 13.71917724 50.05645752 0L512 572.06774903l271.7880249 271.7880249c13.71917724 13.71917724 36.33728028 13.71917724 50.05645752 0l1.48315429-1.4831543c13.71917724-13.71917724 13.71917724-36.33728028 0-50.05645752L563.53961182 520.52813721z" p-id="4108" fill="#707070"></path>
+      </g>
+    </g>
+  </defs>
+  <g transform="matrix(1 0 0 1 -1107 -1795 )">
+    <use xlink:href="#widget5" filter="url(#filter4)" />
+    <use xlink:href="#widget5" />
+  </g>
+</svg>

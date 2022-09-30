@@ -1,0 +1,399 @@
+/*
+ * @Author: your name
+ * @Date: 2020-10-22 17:43:42
+ * @LastEditTime: 2020-10-30 14:53:06
+ * @LastEditors: Please set LastEditors
+ * @Description: 考勤统计页面样式
+ * @FilePath: \SBS\src\views\modules\GarbageClassification\StatisticsReport\AttendanceStatistics\AttendanceStatistics.less
+ */
+//考勤打卡样式
+.dialog_css {
+    //弹窗表头样式
+    font-size: 14px;
+    
+    /deep/ .el-dialog {
+      margin-top:50px !important;
+      border-radius: 5px;
+      box-shadow: 0px 0px 23px 3px rgba(201, 201, 201, 0.27);
+    }
+    //弹窗表头样式
+    /deep/ .el-dialog__header {
+      height: 40px;
+      line-height: 40px;
+      background-color: #f1f4f6;
+      border-radius: 5px 5px 0px 0px;
+      padding: 0px;
+      /deep/ .el-dialog__title {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+      /deep/.el-dialog__headerbtn {
+        top: 0px;
+      }
+    }
+    /deep/ .el-dialog__body {
+      padding: 0px;
+    }
+  
+    .title {
+      background: rgba(249, 251, 255, 1);
+      padding: 10px 0px 10px 10px;
+      display: flex;
+      white-space: nowrap;
+      justify-content: space-around;
+      .title_span {
+        color: #999999;
+        .title_span_after {
+          color: #333333;
+        }
+      }
+    }
+    .second_row {
+      background: #fff;
+      height: 70px;
+      flex: 1;
+      border-bottom: 1px solid #dae7f8;
+      .header_dateRange {
+        margin: 20px 0px 20px 540px;
+        display: inline-block;
+        width: 200px;
+        color: #333333;
+        font-weight: bold;
+        .button {
+          color: #495060;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          background: #ffffff;
+          padding-left: 7px;
+          box-shadow: 0px 3px 9px 0px rgba(66, 132, 236, 0.09);
+          border: 1px solid #dbe3e9;
+          cursor: pointer;
+          &:hover {
+            color: #0091ff;
+          }
+          &.inactive {
+            color: #dbe3e9;
+            cursor: not-allowed;
+          }
+        }
+      }
+      .header_select {
+        margin-left: 220px;
+      }
+      .export-button {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 6px;
+        display: inline-block;
+        background: no-repeat center/100% 100%
+          url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTQgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+aWNvbl/lr7zlhaVf55S75p2/IDE8L3RpdGxlPgogICAgPGcgaWQ9IuWeg+WcvuWIhuexu+euoeeQhiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IuWeg+WcvuWIhuexu+eCueivpuaDhS3mkqTmobborrDlvZUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTAwLjAwMDAwMCwgLTEzNi4wMDAwMDApIiBmaWxsPSIjM0Y5MkZFIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8ZyBpZD0i5by55qGGIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODUuMDAwMDAwLCAzOS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJidG4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgwMi4wMDAwMDAsIDg5LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJpY29uX+WvvOWFpV/nlLvmnb8tMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAuMDAwMDAwLCAxNS4wMDE5NTMpIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTIwLjAwMDAwMCwgLTE1LjAwMTk1MykgdHJhbnNsYXRlKDEzLjAwMDAwMCwgOC4wMDE5NTMpIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEyLjE0Mjg1NzEsNy44NTkwOTU5OCBDMTIuMzcwMTg1Niw3Ljg1OTA5NTk4IDEyLjU4ODIwMzIsNy45NDk0MDE4NCAxMi43NDg5NDg3LDguMTEwMTQ3MzEgQzEyLjkwOTY5NDEsOC4yNzA4OTI3OCAxMyw4LjQ4ODkxMDQyIDEzLDguNzE2MjM4ODQgTDEzLDguNzE2MjM4ODQgTDEzLDEyLjE0NDgxMDMgQzEzLDEyLjYxODE5NzIgMTIuNjE2MjQ0MSwxMy4wMDE5NTMxIDEyLjE0Mjg1NzEsMTMuMDAxOTUzMSBMMTIuMTQyODU3MSwxMy4wMDE5NTMxIEwxLjg1NzE0Mjg2LDEzLjAwMTk1MzEgQzEuMzgzNzU1OTMsMTMuMDAxOTUzMSAxLDEyLjYxODE5NzIgMSwxMi4xNDQ4MTAzIEwxLDEyLjE0NDgxMDMgTDEsOC43MTYyMzg4NCBDMSw4LjI0Mjg1MTkxIDEuMzgzNzU1OTMsNy44NTkwOTU5OCAxLjg1NzE0Mjg2LDcuODU5MDk1OTggQzIuMzMwNTI5NzgsNy44NTkwOTU5OCAyLjcxNDI4NTcxLDguMjQyODUxOTEgMi43MTQyODU3MSw4LjcxNjIzODg0IEwyLjcxNDI4NTcxLDguNzE2MjM4ODQgTDIuNzE0Mjg1NzEsMTEuMjg3NjY3NCBMMTEuMjg1NzE0MywxMS4yODc2Njc0IEwxMS4yODU3MTQzLDguNzE2MjM4ODQgQzExLjI4NTcxNDMsOC4yNDI4NTE5MSAxMS42Njk0NzAyLDcuODU5MDk1OTggMTIuMTQyODU3MSw3Ljg1OTA5NTk4IFogTTcuMDMsMS44NTkwOTYwMSBDNy4xNTg3Mzc1NiwxLjg1OTA5NjAxIDcuMjgwMzY0MjgsMS45MTgxMzc0NCA3LjM2LDIuMDE5Mjg4MzggTDkuODg4NTcxNDMsNS4xNTY0MzEyNCBDOS45ODg1Mzk3Miw1LjI4MjYyMTQ0IDEwLjAwOTM1NjUsNS40NTQxOTEyMiA5Ljk0MjQ2NjI4LDUuNjAwNjI2NiBDOS44NzU1NzYwNSw1Ljc0NzA2MTk4IDkuNzMyMjYzMjksNS44NDM2NTkgOS41NzE0Mjg1Nyw1Ljg1MDcxNjk1IEw3Ljg1NzE0Mjg2LDUuODUwNzE2OTUgTDcuODU3MTQyODYsOS4yNzkyODgzOCBDNy44NTcxNDI4NCw5Ljc1MjY3NTMgNy40NzMzODY5MiwxMC4xMzY0MzEyIDcsMTAuMTM2NDMxMiBDNi41MjY2MTMwOCwxMC4xMzY0MzEyIDYuMTQyODU3MTYsOS43NTI2NzUzIDYuMTQyODU3MTQsOS4yNzkyODgzOCBMNi4xNDI4NTcxNCw1Ljg1MDcxNjk1IEw0LjUwNTcxNDI5LDUuODUwNzE2OTUgQzQuMzQxNzg5MDQsNS44NDk5NjM5NiA0LjE5MjY1MzQ0LDUuNzU1NzY5NTEgNC4xMjE1MzkzNSw1LjYwODA3MTAzIEM0LjA1MDQyNTI2LDUuNDYwMzcyNTQgNC4wNjk3OTIxMSw1LjI4NTA0NzI4IDQuMTcxNDI4NTcsNS4xNTY0MzEyNCBMNi43LDIuMDE5Mjg4MzggQzYuNzc5NjM1NzIsMS45MTgxMzc0NCA2LjkwMTI2MjQ0LDEuODU5MDk2MDEgNy4wMywxLjg1OTA5NjAxIFoiIGlkPSLlkIjlubblvaLnirYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcuMDAwMDAwLCA3LjQzMDUyNSkgc2NhbGUoMSwgLTEpIHRyYW5zbGF0ZSgtNy4wMDAwMDAsIC03LjQzMDUyNSkgIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
+      }
+    }
+    .third_row {
+      margin-left: 460px;
+      font-size: 18px;
+      position: relative;
+      .span_css {
+        display: inline-block;
+        width: 200px;
+        .span_td {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: #333333;
+        }
+        .span_tr {
+          font-size: 16px;
+          color: #999999;
+        }
+      }
+      .third_row_line {
+        width: 2px;
+        height: 30px;
+        position: absolute;
+        left: 140px;
+        top: 15px;
+        background: #dae7f8;
+        border-radius: 8px;
+        display: inline-block;
+      }
+    }
+    .table_overflow {
+      height: 600px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        background: transparent;
+        width: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #d5d5d5;
+        border-radius: 5px;
+      }
+     .table_css {
+       margin-bottom: 20px;
+       border: 1px solid #dae7f8;
+       border-radius: 4px;
+      .table_title {
+        background-color: #f0f5ff;
+        height: 40px;
+        padding: 10px 0px 10px 10px;
+        cursor: pointer;
+        .title_item {
+          overflow: hidden;
+          display: inline-block;
+          width: 210px;
+          margin-left: 10px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+  
+        .title_image {
+          margin-top: -10px;
+          width: 20px;
+          transition: 0.2s;
+          transform-origin: center;
+          transform: rotateZ(0deg);
+        }
+        .title_image2 {
+          margin-top: -10px;
+          width: 20px;
+          transition: 0.2s;
+          transform-origin: center;
+          transform: rotateZ(180deg);
+        }
+      }
+      
+        
+      .display_card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .period_title {
+          background-color: #ffffff;
+  
+          white-space: nowrap;
+  
+          margin: 20px 0px 10px 280px;
+          position: relative;
+          .period_title_img {
+            margin-right: 10px;
+            margin-left: 20px;
+          }
+          .period_title_img2 {
+            margin-left: -60px;
+          }
+          .period_title_span {
+            display: inline-block;
+            width: 200px;
+          }
+          .period_title_span2 {
+            display: inline-block;
+            width: 200px;
+            margin-left: 40px;
+          }
+          .period_title_line {
+            width: 2px;
+            height: 20px;
+            position: absolute;
+            left: 250px;
+            top: 0px;
+            background: #dae7f8;
+            border-radius: 8px;
+            display: inline-block;
+          }
+          .period_title_line2 {
+            width: 2px;
+            height: 20px;
+            position: absolute;
+            left: 430px;
+            top: 0px;
+            background: #dae7f8;
+            border-radius: 8px;
+            display: inline-block;
+          }
+        }
+        .period_card {
+          border: 1px solid #dae7f8;
+          width: 290px;
+          position: relative;
+          margin: 10px 30px 10px 40px;
+          display: inline-block;
+          border-radius: 4px;
+          .period_card_time {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            z-index: 10;
+            text-align: center;
+            font-size: 14px;
+            color: #666666;
+            .period_card_time_css {
+              font-weight: bold;
+            }
+          }
+          .period_card_img2 {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 2;
+          }
+          .period_card_imgRemark {
+            display: none;
+            transition: 0.5s;
+            .period_card_remark {
+              color: #999999;
+              margin: 0px 20px;
+              .period_card_remark_css {
+                color: #333333;
+              }
+            }
+          }
+          .period_card_noImgRemark {
+            .period_card_remark {
+              color: #999999;
+              margin: 0px 20px;
+              .period_card_remark_css {
+                color: #333333;
+              }
+            }
+          }
+        }
+      }
+      .hide_card {
+        display: none;
+        transition: 0.5s;
+      }
+    }}
+  }
+  
+  // 打卡弹窗样式
+  .add-task-dialog {
+    // 弹窗表头样式
+    font-size: 14px;
+    /deep/ .el-dialog {
+      border-radius: 5px;
+      box-shadow: 0px 0px 23px 3px rgba(201, 201, 201, 0.27);
+    }
+    /deep/ .el-dialog__header {
+      height: 40px;
+      line-height: 40px;
+      background-color: #f1f4f6;
+      border-radius: 5px 5px 0px 0px;
+      padding: 0px;
+      /deep/ .el-dialog__title {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+      /deep/.el-dialog__headerbtn {
+        top: 0px;
+      }
+    }
+    /deep/ .el-dialog__body {
+      padding: 0px;
+    }
+    .container_front {
+      background: rgba(249, 251, 255, 1);
+      padding: 10px 0px 10px 40px;
+      display: flex;
+      justify-content: space-around;
+      .front_span {
+        color: #999999;
+      }
+      .front_font {
+        color: #333333;
+      }
+  
+      .front_font2 {
+        color: #333333;
+        display: inline-block;
+        width: 100px;
+      }
+    }
+    .container_bottom {
+      display: inline-block;
+      padding:20px;
+      margin:10px;
+      width: 250px;
+      height: 250px;
+      border-radius: 5px;
+      background-color: rgba(249, 251, 255, 1);
+      border: 1px solid #f4f4f4;
+      vertical-align: top;
+      text-align: center;
+      .bottom_span {
+        display: block;
+        // margin: 30px 0px 30px 60px;
+        color: #333333;
+      }
+      .state_span {
+        display: block;
+        // padding-left:100px;
+        font-weight: 500;
+        color: rgba(0, 145, 255, 1);
+      }
+      .state_span2{
+        padding-left:100px;
+        font-weight: 500;
+        color:#f56c6c;
+      }
+    }
+  }
+  // 统计数据样式
+  .statistic_table {
+    display: flex;
+    justify-content: space-around;
+    .statistic1 {
+      font-size: 14px;
+      color: #333333;
+      padding-left: 70px;
+      font-weight: bold;
+      display: inline-block;
+      height: 50px;
+      width: 220px;
+      .span_td {
+        font-size: 13px;
+        color: #333333;
+        text-align: center;
+      }
+      .span_tr {
+        color: #999999;
+      }
+    }
+    .statistic {
+      font-size: 14px;
+      color: #333333;
+      padding-left: 40px;
+      font-weight: bold;
+      display: inline-block;
+      height: 50px;
+      width: 220px;
+      .span_td {
+        font-size: 13px;
+        color: #333333;
+        text-align: center;
+      }
+      .span_tr {
+        color: #999999;
+      }
+    }
+    .span_line{
+      display: block;
+      width: 2px;
+      height: 20px;
+      margin: 9px 5px;
+      background-color: rgba(0,0,0,.05);
+    }
+  }
+  .content_header_title {
+    border-left: 3px solid rgba(0, 145, 255, 1);
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 14px;
+  }

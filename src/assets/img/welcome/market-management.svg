@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="382px" height="264px" viewBox="0 0 382 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="382" height="264" rx="8"></rect>
+        <filter x="-3.5%" y="-4.0%" width="107.1%" height="110.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.415686275   0 0 0 0 0.71372549   0 0 0 0 0.905882353  0 0 0 0.231561407 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="52.6452109%" y1="9.46312906%" x2="49.9984272%" y2="91.2622804%" id="linearGradient-4">
+            <stop stop-color="#19DD90" offset="0.0316722973%"></stop>
+            <stop stop-color="#29D9BC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="44.7388141%" y1="75.705138%" x2="53.5905578%" y2="11.8044871%" id="linearGradient-5">
+            <stop stop-color="#0DE2A4" stop-opacity="0.637019231" offset="0%"></stop>
+            <stop stop-color="#1DE8A7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="登录页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="社会治理欢迎页备份-3" transform="translate(-563.000000, -249.000000)">
+            <g id="椭圆形" transform="translate(563.000000, 249.000000)">
+                <g id="undraw_performance_overview_p9bm">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="蒙版" opacity="0.899414062">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="椭圆形" fill-opacity="0.0632102273" fill="#0091FF" opacity="0.759486607" mask="url(#mask-2)" cx="318.5" cy="-60.5" r="208.5"></circle>
+                    <circle id="椭圆形-copy-7" fill-opacity="0.0632102273" fill="#0091FF" opacity="0.759486607" mask="url(#mask-2)" transform="translate(19.000000, 438.000000) scale(-1, 1) translate(-19.000000, -438.000000) " cx="19" cy="438" r="253"></circle>
+                </g>
+                <g id="编组" transform="translate(142.000000, 113.000000)" fill-rule="nonzero">
+                    <path d="M6.03695035,61.4421914 L17.9272633,61.4421914 L17.9272633,73.3322777 L6.03695035,73.3322777 L6.03695035,61.4421914 Z M31.7943253,61.4421914 L43.6915544,61.4421914 L43.6915544,73.3322777 L31.7943253,73.3322777 L31.7943253,61.4421914 Z M6.03695035,37.6547628 L17.9272633,37.6547628 L17.9272633,49.5518785 L6.03695035,49.5518785 L6.03695035,37.6547628 Z M31.7943253,37.6547628 L43.6915544,37.6547628 L43.6915544,49.5518785 L31.7943253,49.5518785 L31.7943253,37.6547628 Z M6.03695035,11.8904717 L17.9272633,11.8904717 L17.9272633,23.7805579 L6.03695035,23.7805579 L6.03695035,11.8904717 Z M31.7943253,11.8904717 L43.6915544,11.8904717 L43.6915544,23.7805579 L31.7943253,23.7805579 L31.7943253,11.8904717 Z M0.0848210786,99.1034849 L49.6296248,99.1034849 L49.6296248,0.000158770634 L0.0848210786,0.000158770634 L0.0848210786,99.1034849 Z" id="形状" fill="url(#linearGradient-4)"></path>
+                    <path d="M99.1882606,43.5998627 L99.1882606,99.1035983 L87.2982877,99.1035983 L87.2982877,75.3094802 L67.4787562,75.3094802 L67.4787562,99.1035983 L55.5816406,99.1035983 L55.5816406,43.5998627 L99.1882606,43.5998627 Z M99.1812311,31.702747 L99.1812311,37.6547628 L55.5816406,37.6547628 L55.5816406,31.702747 L99.1812311,31.702747 Z" id="形状结合" fill="url(#linearGradient-5)" style="mix-blend-mode: multiply;" opacity="0.400000006"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

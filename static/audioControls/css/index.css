@@ -1,0 +1,102 @@
+.control_wrap{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.playImg{
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+.playImg>img{
+  width: 15px;
+  height: 17px;
+  cursor: pointer;
+}
+.audio_wrap .img_del{
+  margin: 0 5px;
+}
+.schedule{
+  width: 107px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.schedule>div{
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99;
+  background:rgba(159,200,254,1);
+  border-radius:6px;
+  height: 3px;
+}
+.schedule /deep/ .el-slider__runway{
+  background: #606266;
+}
+.schedule /deep/ .el-slider__bar{
+  background: #fff;
+}
+.schedule /deep/ .el-slider__button{
+  border: 3px solid #fff;
+  background-color: #606266;
+  width: 12px;
+  height: 12px;
+}
+.timeDis{
+  width: 46px;
+  font-size:14px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  color: #606266;
+}
+.mute_dl{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.control_wrap>div>img{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.downloadAuido{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.schedule input[type=range]{
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+}
+.schedule input[type=range] {
+  -webkit-appearance: none;/*清除系统默认样式*/
+  width: 107px;
+  background: -webkit-linear-gradient(#eee, #eee) no-repeat, #eee;/*设置左边颜色为#61bd12，右边颜色为#ddd*/
+  background-size: 75% 100%;/*设置左右宽度比例*/
+  height: 4px;/*横条的高度*/
+  border-radius: 0.1rem;
+  position: relative;
+}
+/*拖动块的样式*/
+.schedule input[type=range]::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;/*清除系统默认样式*/
+  height: 13px;/*拖动块高度*/
+  width: 13px;/*拖动块宽度*/
+  background: #fff;/*拖动块背景*/
+  border-radius: 50%; /*外观设置为圆形*/
+  border: solid 3px #9FC8FE; /*设置边框*/
+  box-sizing: border-box;
+  z-index: 100;
+}

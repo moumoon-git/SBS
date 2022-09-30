@@ -1,0 +1,18 @@
+@import './shared.scss';
+
+.el-input--medium.sbs-input {
+  & > .el-input__inner {
+    color: $text-color;
+    height: $height;
+    line-height: $height;
+    padding-left: 10px;
+  }
+
+  &.el-input--prefix > .el-input__inner {
+    padding-left: 30px;
+  }
+
+  .el-input__icon {
+    line-height: $height;
+  }
+}

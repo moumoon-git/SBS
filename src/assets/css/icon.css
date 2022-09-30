@@ -1,0 +1,458 @@
+.icon-ronghetongxun {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/communicate.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-shijianguanli {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/eventManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-lishijilu {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/history.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-zhibanguanli {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/dutyManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-xinxidongtai {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/adminStaff.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-tongjifenxi {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/analysis.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-fanxuntaifen {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/warningManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-chulipishi {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/icon/processed.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-mubanguanli {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/defaultState/modulesManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+/* 点击二级菜单后，一级菜单高亮 */
+.el-submenu__title:hover .icon-ronghetongxun,
+.el-submenu.is-active .el-submenu__title .icon-ronghetongxun{
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/communicate.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-shijianguanli,
+.el-submenu.is-active .el-submenu__title .icon-shijianguanli  {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/eventManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-lishijilu,
+.el-submenu.is-active .el-submenu__title .icon-lishijilu {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/history.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-zhibanguanli,
+.el-submenu.is-active .el-submenu__title .icon-zhibanguanli  {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/dutyManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-xinxidongtai,
+.el-submenu.is-active .el-submenu__title .icon-xinxidongtai  {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/adminStaff.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-tongjifenxi,
+.el-submenu.is-active .el-submenu__title .icon-tongjifenxi  {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/analysis.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-fanxuntaifen,
+.el-submenu.is-active .el-submenu__title .icon-fanxuntaifen  {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/warningManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-chulipishi {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/icon/processed.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.el-submenu__title:hover .icon-mubanguanli,
+.el-submenu.is-active .el-submenu__title .icon-mubanguanli  {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/clickState/modulesManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+
+/*收缩状态下菜单图标样式*/
+.icon-fanxuntaifen-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/icon/floodPrevention.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-fanxuntaifen-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(	255,69,0, 1), rgba(248, 200, 90, 1));
+  border-radius: 50%;
+}
+
+.icon-mubanguanli-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/icon/templateManagement.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon-mubanguanli-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(255,250,240, 1), rgba(	225,255,255, 1));
+  border-radius: 50%;
+}
+
+.icon-chulipishi-shrink{
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/icon/processed.png") no-repeat;
+  background-size: 100% 100%;
+}
+.icon-chulipishi-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(	220,220,220, 1), rgba(255,160,122, 1));
+  border-radius: 50%;
+}
+
+.icon-ronghetongxun-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/communicate-inactive.png") no-repeat
+}
+
+.icon-ronghetongxun-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(58, 175, 245, 1), rgba(53, 128, 253, 1));
+  border-radius: 50%;
+}
+
+.icon-shijianguanli-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/eventManagement-inactive.png") no-repeat
+}
+
+.icon-shijianguanli-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(253, 188, 74, 1), rgba(248, 135, 64, 1));
+  border-radius: 50%;
+}
+
+.icon-lishijilu-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/history-inactive.png") no-repeat
+}
+
+
+
+.icon-lishijilu-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(192, 115, 242, 1), rgba(130, 73, 223, 1));
+  border-radius: 50%;
+}
+
+
+.icon-zhibanguanli-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/dutyManagement-inactive.png") no-repeat
+}
+
+.icon-zhibanguanli-circle {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: -8px;
+  background: linear-gradient(180deg, rgba(250, 116, 99, 1), rgba(245, 68, 92, 1));
+  border-radius: 50%;
+}
+
+.icon-xinxidongtai-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/informationDynamic-inactive.png") no-repeat
+}
+
+.icon-xinxidongtai-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(165, 232, 123, 1), rgba(25, 181, 41, 1));
+  border-radius: 50%;
+}
+
+.icon-tongjifenxi-shrink {
+  float: left;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/img/menuIcon/analysis-inactive.png") no-repeat
+}
+
+.icon-tongjifenxi-circle {
+  width: 40px;
+  height: 40px;
+  margin: -8px;
+  display: inline-block;
+  background: linear-gradient(180deg, rgba(64,224,208, 1), rgba(245,245,245, 1));
+  border-radius: 50%;
+}
+
+/*按钮图标*/
+.icon-refresh {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/refresh.png") no-repeat;
+}
+
+.icon-add {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/add.png") no-repeat;
+}
+
+.icon-edit {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/edit.png") no-repeat;
+}
+
+.icon-delete {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/delete.png") no-repeat;
+}
+
+.icon-sort {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/sort.png") no-repeat;
+}
+
+.icon-batch-join {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/batchToJoin.png") no-repeat;
+}
+
+.icon-keep-calling {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/keepcalling.png") no-repeat;
+}
+
+.icon-dial {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/buttonIcon/figureDIsc.png") no-repeat;
+}
+
+.icon-headset {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/icon/earPhone.png") no-repeat;
+}
+
+.icon-voice {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../../../static/img/icon/voice.png") no-repeat;
+}
+
+/*职务图标、单位图标*/
+.icon-zhiwu {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../../../static/img/icon/position.png") no-repeat;
+}
+
+.icon-danwei{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../../../static/img/icon/unit.png") no-repeat;
+}
+
+
+/*视频分组图标*/
+.icon-shipinfenzu{
+  width: 34px;
+  height: 36px;
+  display: inline-block;
+  background: url("../../../static/img/icon/videoGroup.png") no-repeat;
+}
+
+/*终端列表图标*/
+.icon-zongduanliebiao{
+  width: 34px;
+  height: 36px;
+  display: inline-block;
+  background: url("../../../static/img/icon/terminalList.png") no-repeat;
+}
+
+/*附件图标*/
+.icon-clip{
+    width: 14px;
+    height: 32px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/clip.png") no-repeat;
+}
+
+/*政务管理-下发图标*/
+.icon-issue{
+    width: 14px;
+    height: 32px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/issue.png") no-repeat;
+}
+
+/*政务管理-查看图标*/
+.icon-see{
+    width: 14px;
+    height: 32px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/see.png") no-repeat;
+}
+
+.icon-pdf{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/pdf.png") no-repeat;
+}
+
+.icon-excel{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/excel.png") no-repeat;
+}
+.icon-word{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/word.png") no-repeat;
+}
+
+.icon-pic{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/picture.png") no-repeat;
+}
+.icon-txt{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../../static/img/informationDynamicsIcon/txt.png") no-repeat;
+}
+
+
+
+

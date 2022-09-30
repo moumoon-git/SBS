@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="48px" viewBox="0 0 46 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>提示</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="66.6870117%" id="linearGradient-1">
+            <stop stop-color="#C1D3EF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="1.09736272%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#5595FF" offset="0%"></stop>
+            <stop stop-color="#A4C7FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#FCFDFF" offset="0%"></stop>
+            <stop stop-color="#D7DEEA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#FCFDFF" offset="0%"></stop>
+            <stop stop-color="#92B8FD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="通用图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-579.000000, -736.000000)" id="编组-7">
+            <g transform="translate(66.000000, 596.000000)">
+                <g id="弹框2" transform="translate(460.000000, 62.000000)">
+                    <g id="垃圾桶" transform="translate(53.000000, 75.000000)">
+                        <circle id="Oval-6" fill="url(#linearGradient-1)" cx="19" cy="43" r="7"></circle>
+                        <path d="M20,9 C21.6568542,9 23,10.3431458 23,12 L23.0007456,12.5799793 C28.7833403,14.3013162 33,19.6582313 33,26 L33,32.9145508 L33,32.9145508 C33,35.9033479 33.570194,38.7029048 34.7105821,41.3132217 C35.4802327,41.7396279 36,42.5591149 36,43.5 C36,44.8807119 34.8807119,46 33.5,46 L4.5,46 C3.11928813,46 2,44.8807119 2,43.5 C2,42.3936017 2.71871837,41.4550692 3.71474333,41.125814 C4.57165165,39.0564066 5,36.3194002 5,32.9145508 L5,26 L5,26 C5,19.6578647 9.21714721,14.3006968 15.0002573,12.5796808 L15,12 C15,10.3431458 16.3431458,9 18,9 L20,9 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                        <path d="M23.6338622,18.8494302 C26.5801808,20.8780038 28.5117188,24.2744696 28.5117188,28.1220703 C28.5117188,28.7829088 28.5117188,29.3199534 28.5117188,29.7627204" id="Rectangle-4-Copy-5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+                        <circle id="Oval-3" fill="url(#linearGradient-3)" cx="41.5" cy="18.5" r="2.5"></circle>
+                        <circle id="Oval-3-Copy-3" fill="url(#linearGradient-4)" cx="32.5" cy="6.5" r="1.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

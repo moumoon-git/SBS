@@ -1,0 +1,60 @@
+<!-- @author: tanjinfeng -->
+<!-- @date: 2020.09.28 -->
+<!-- @desc: 监控视频弹窗 -->
+<!DOCTYPE html>
+<html lang="en" style="width:100%;height:100%;">
+
+<head>
+    <meta charset="utf-8" />
+	<title>实时监控视频</title>
+	<!-- 引入第三方库支持IE环境下使用Promise -->
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+</head>
+
+<body style="width:100%;height:100%;margin:0;background:black;" onload="init()">
+
+	<div id="liveView" style="height:100%;">
+		<!-- 实时视频窗口 -->
+		<object id="oddLiveView" width="100%" height="100%" classid="clsid:07D2F7C2-B7B5-47DE-B36A-DC38B2336EEA";></object>
+	</div>
+    
+    <script language="javascript">
+		var user = '';
+		var key = '';
+		var ip = '';
+		var guid = '';
+		function init(){
+			// 初始化控件
+			document.oddLiveView.InitVATools();
+			// url示例：http://localhost:8202/static/LiveMonitorVideo.html?user=admin&key=&ip=192.168.0.143&guid=00000001-0000-0000-0000-C0A80066D007
+			var url = location.href;
+			var param = url.split('?')[1].split('&');
+			user = param[0].split('user=')[1]||'admin';
+			key = param[1].split('key=')[1]||'';
+			ip = param[2].split('ip=')[1]||'192.168.0.143';
+			guid = param[3].split('guid=')[1]||'00000001-0000-0000-0000-C0A80066D007';
+			// 连接服务器，打开视频
+			new Promise(function(resolve, reject) {
+				var ret = document.oddLiveView.LoginServer(user, key, ip);
+				if(ret == 0) {
+					resolve();
+				}
+			}).then(function() {
+				document.oddLiveView.OpenLive(guid);
+			}).catch(function(err) {
+				alert('打开视频失败', err)
+			})
+		}
+		// 关闭窗口，注销视频
+        window.onbeforeunload = function() {
+			// 关闭视频
+			document.oddLiveView.CloseLive();
+			// 从VMS服务器注销
+			document.oddLiveView.LogoutServer();
+			// 销毁库的资源
+			document.oddLiveView.UninitVATools();
+		}
+    </script>
+</body>
+</html>

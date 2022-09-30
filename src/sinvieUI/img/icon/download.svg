@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <g id="通用图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-366.000000, -98.000000)" fill="#9FC8FE" fill-rule="nonzero" id="编组-3">
+            <g transform="translate(66.000000, 30.000000)">
+                <g id="编组" transform="translate(65.000000, 68.000000)">
+                    <path d="M249,6.29412579 L245.571438,6.29412579 L245.571438,1 L240.428579,1 L240.428579,6.29412577 L237,6.29412579 L243,12.4705943 L249,6.29412579 Z M237,14.2352972 L237,16 L249,16 L249,14.2352972 L237,14.2352972 Z" id="下载"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

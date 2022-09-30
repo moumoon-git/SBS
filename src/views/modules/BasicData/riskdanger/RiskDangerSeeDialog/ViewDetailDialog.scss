@@ -1,0 +1,32 @@
+.vd {
+    width: 550px;
+    text-align: left;
+    &__navigator {
+        text-align: left;
+        background: #F9FBFF;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        user-select: none;
+        &__item {
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+            padding: 0 10px;
+            margin-right: 10px;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                cursor: pointer;
+                border-bottom-color: #0091FF;
+            }
+        }
+        &__item-active {
+            color: #333333;
+            font-weight: bold;
+            border-bottom-color: #0091FF;
+        }
+        &__content {
+            position: relative;
+        }
+    }
+}

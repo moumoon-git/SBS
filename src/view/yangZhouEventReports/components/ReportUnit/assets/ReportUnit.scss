@@ -1,0 +1,27 @@
+// 报告单位
+.report-unit-container {
+  width: 100%;
+}
+
+.autocomplete-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.autocomplete-item-left {
+  width: calc(100% - 30px);
+  display: inline-block;
+}
+
+.autocomplete-item-right {
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.autocomplete-item-right:hover {
+  filter: brightness(1.2);
+}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="120px" viewBox="0 0 125 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>主图形</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="17.780843%" id="linearGradient-1">
+            <stop stop-color="#B2E9FF" offset="0%"></stop>
+            <stop stop-color="#0089FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="值班总览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g id="值班总览备份" transform="translate(-227.000000, -173.000000)" fill="url(#linearGradient-1)">
+            <g id="编组-19" transform="translate(170.000000, 98.000000)">
+                <g id="编组-16" transform="translate(23.000000, 44.000000)">
+                    <g id="编组-25" transform="translate(14.000000, 0.000000)">
+                        <g id="编组-23" transform="translate(14.371584, 24.211773)">
+                            <path d="M105.371565,28.5730998 L125.101934,62.6888301 C137.046557,83.3422465 129.986685,109.768179 109.333268,121.712801 C102.759468,125.51467 95.2996299,127.516483 87.7056154,127.516483 L48.2448773,127.516483 C24.3861761,127.516483 5.04487734,108.175184 5.04487734,84.3164828 C5.04487734,76.7224683 7.0466906,69.2626306 10.8485588,62.6888301 L30.5789279,28.5730998 C42.5235506,7.91968334 68.9494826,0.859811149 89.6028991,12.8044339 C96.1485743,16.5900362 101.585963,22.0274245 105.371565,28.5730998 Z" id="Triangle-2-Copy"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

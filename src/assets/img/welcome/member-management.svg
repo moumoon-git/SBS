@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="382px" height="264px" viewBox="0 0 382 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="382" height="264" rx="8"></rect>
+        <filter x="-3.5%" y="-4.0%" width="107.1%" height="110.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.415686275   0 0 0 0 0.71372549   0 0 0 0 0.905882353  0 0 0 0.231561407 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="83.8846075%" y1="-12.3458246%" x2="19.860045%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#8795FF" offset="0%"></stop>
+            <stop stop-color="#717AFF" stop-opacity="0.563100962" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="63.7490148%" y1="-12.3458246%" x2="37.770415%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#8795FF" offset="0%"></stop>
+            <stop stop-color="#717AFF" stop-opacity="0.563100962" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="登录页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="社会治理欢迎页备份-3" transform="translate(-975.000000, -249.000000)">
+            <g id="编组-6" transform="translate(975.000000, 249.000000)">
+                <g id="undraw_performance_overview_p9bm">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="蒙版" opacity="0.899414062">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="椭圆形" fill-opacity="0.0632102273" fill="#0091FF" opacity="0.759486607" mask="url(#mask-2)" cx="318.5" cy="-60.5" r="208.5"></circle>
+                    <circle id="椭圆形-copy-7" fill-opacity="0.0632102273" fill="#0091FF" opacity="0.759486607" mask="url(#mask-2)" transform="translate(19.000000, 438.000000) scale(-1, 1) translate(-19.000000, -438.000000) " cx="19" cy="438" r="253"></circle>
+                </g>
+                <g id="编组" transform="translate(144.000000, 110.000000)" fill-rule="nonzero">
+                    <path d="M38.6827596,44.2311958 C50.8743804,44.2311958 60.7871936,34.2563771 60.7871936,22.1155979 C60.7871936,9.91781967 50.8174102,0 38.6827596,0 C26.4911387,0 16.5783255,9.97481864 16.5783255,22.1155979 C16.5783255,34.3133761 26.5481089,44.2311958 38.6827596,44.2311958 Z M38.6827596,49.8170942 C17.3759082,49.8170942 0,67.2587771 0,88.5193905 C0,90.1723605 0,94.04829 5.52610851,94.04829 L71.8963808,94.04829 C77.4224893,94.04829 77.4224893,90.1723605 77.4224893,88.5193905 C77.4224893,67.2017781 59.9896109,49.8170942 38.6827596,49.8170942 Z" id="形状" fill="url(#linearGradient-4)"></path>
+                    <path d="M63.5787329,47.024145 C81.809194,47.024145 96.735384,61.9578735 96.735384,80.2545408 C96.735384,83.2754859 94.2286956,85.7834403 91.2092755,85.7834403 L91.2092755,85.7834403 L82.6637469,85.7834403 C81.5813132,68.6267522 71.0418279,54.2630134 56.115638,47.8791295 C58.6223263,47.3091398 61.0720446,47.024145 63.5787329,47.024145 Z M63.5787329,8.32184869 C72.6939635,8.32184869 80.1570585,15.7887129 80.1570585,24.9085471 C80.1570585,34.0283813 72.6939635,41.4952455 63.5787329,41.4952455 C62.1544782,41.4952455 60.5023426,40.9252559 59.1350581,40.6402611 C63.5787329,35.9663461 66.3133021,29.2974673 66.3133021,22.1725969 C66.3133021,17.1566881 64.9460175,12.482773 62.7241801,8.32184869 L62.7241801,8.32184869 Z" id="形状结合" fill="url(#linearGradient-5)" opacity="0.530901228"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
